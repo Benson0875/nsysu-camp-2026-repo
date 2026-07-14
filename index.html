@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2026 五系聯合迎新宿營</title>
+    <title>2026 中山五系聯合迎新宿營</title>
     <meta
       name="description"
-      content="2026 中山醫科、外文、光電、機電、生科五系聯合迎新宿營活動介紹。"
+      content="2026 中山醫科、外文、光電、機電、生科五系聯合迎新宿營活動介紹、流程、地點與贊助資訊。"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,16 +16,26 @@
     />
     <style>
       :root {
-        --bg: #f5f5f7;
-        --paper: #ffffff;
-        --ink: #1d1d1f;
-        --muted: #6e6e73;
-        --line: rgba(29, 29, 31, 0.12);
-        --blue: #0071e3;
-        --green: #0a7f70;
-        --pink: #c84d7f;
-        --gold: #b7791f;
-        --shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+        --bg: #f6f7f4;
+        --surface: #ffffff;
+        --surface-soft: #eef2ed;
+        --ink: #141817;
+        --text: #27302d;
+        --muted: #61706a;
+        --line: rgba(20, 24, 23, 0.14);
+        --line-strong: rgba(20, 24, 23, 0.22);
+        --forest: #145646;
+        --sea: #176d8f;
+        --coral: #c85242;
+        --sun: #e0a526;
+        --lime: #b7d84b;
+        --sky: #4eb3d8;
+        --berry: #d94b8b;
+        --night: #101615;
+        --focus: #0a84ff;
+        --shadow: 0 18px 48px rgba(20, 24, 23, 0.11);
+        --radius: 8px;
+        --max: 1160px;
       }
 
       * {
@@ -38,60 +48,137 @@
 
       body {
         margin: 0;
-        color: var(--ink);
-        background: var(--bg);
+        background:
+          linear-gradient(90deg, rgba(20, 86, 70, 0.05) 1px, transparent 1px),
+          linear-gradient(180deg, rgba(20, 86, 70, 0.05) 1px, transparent 1px),
+          linear-gradient(180deg, #fffdf8 0%, var(--bg) 28%, #eef6f7 100%);
+        background-size: 42px 42px, 42px 42px, auto;
+        color: var(--text);
         font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+      }
+
+      body::selection {
+        background: rgba(224, 165, 38, 0.45);
       }
 
       a {
         color: inherit;
       }
 
-      .wrap {
-        width: min(1120px, calc(100% - 32px));
-        margin: 0 auto;
+      img {
+        display: block;
+        max-width: 100%;
       }
 
-      .nav {
-        position: sticky;
-        top: 0;
-        z-index: 20;
-        background: rgba(245, 245, 247, 0.78);
-        border-bottom: 1px solid rgba(29, 29, 31, 0.08);
-        backdrop-filter: saturate(180%) blur(22px);
+      :focus-visible {
+        outline: 3px solid var(--focus);
+        outline-offset: 4px;
       }
 
-      .nav-inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        min-height: 52px;
-        font-size: 14px;
-      }
-
-      .brand {
-        font-weight: 900;
-      }
-
-      .links {
-        display: flex;
-        gap: 18px;
-        color: var(--muted);
-      }
-
-      .links a {
+      .skip-link {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        z-index: 1000;
+        transform: translateY(-140%);
+        border-radius: var(--radius);
+        background: var(--ink);
+        color: #fff;
+        padding: 10px 14px;
+        font-weight: 800;
         text-decoration: none;
       }
 
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+
+      .wrap {
+        width: min(var(--max), calc(100% - 32px));
+        margin-inline: auto;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        border-bottom: 1px solid rgba(20, 24, 23, 0.1);
+        background: rgba(246, 247, 244, 0.86);
+        backdrop-filter: blur(18px) saturate(140%);
+      }
+
+      .nav {
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--ink);
+        font-size: 15px;
+        font-weight: 900;
+        text-decoration: none;
+      }
+
+      .brand-mark {
+        width: 28px;
+        height: 28px;
+        border-radius: 7px;
+        background:
+          linear-gradient(135deg, var(--forest), transparent 62%),
+          linear-gradient(315deg, var(--sun), var(--coral));
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.45);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .nav-links a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        border-radius: 999px;
+        color: var(--muted);
+        padding: 0 13px;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: background 180ms ease, color 180ms ease;
+      }
+
+      .nav-links a:hover {
+        background: rgba(20, 86, 70, 0.08);
+        color: var(--ink);
+      }
+
       .hero {
-        min-height: calc(100svh - 52px);
+        min-height: calc(100dvh - 60px);
         display: grid;
         align-items: end;
         position: relative;
         overflow: hidden;
+        isolation: isolate;
+        background-color: var(--night);
+      }
+
+      .hero-media {
+        position: absolute;
+        inset: 0;
+        z-index: -2;
         background:
-          linear-gradient(180deg, rgba(245, 245, 247, 0.06), rgba(245, 245, 247, 0.88)),
-          url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=80")
+          linear-gradient(90deg, rgba(10, 13, 13, 0.82), rgba(10, 13, 13, 0.42) 48%, rgba(10, 13, 13, 0.18)),
+          linear-gradient(180deg, rgba(10, 13, 13, 0.08), rgba(10, 13, 13, 0.72)),
+          url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=82")
             center / cover;
       }
 
@@ -99,191 +186,517 @@
         content: "";
         position: absolute;
         inset: auto 0 0;
-        height: 32%;
-        background: linear-gradient(180deg, transparent, var(--bg));
-        pointer-events: none;
+        z-index: -1;
+        height: 34%;
+        background: linear-gradient(180deg, rgba(246, 247, 244, 0), var(--bg));
       }
 
       .hero-content {
-        position: relative;
-        z-index: 1;
-        padding: 120px 0 82px;
+        padding: 82px 0 92px;
         color: #fff;
-        text-shadow: 0 2px 26px rgba(0, 0, 0, 0.32);
       }
 
-      .kicker {
+      .eyebrow {
         display: inline-flex;
         align-items: center;
         gap: 10px;
-        margin-bottom: 18px;
+        margin-bottom: 20px;
+        color: rgba(255, 255, 255, 0.9);
         font-size: 15px;
-        font-weight: 700;
+        font-weight: 900;
       }
 
-      .dot {
-        width: 8px;
-        height: 8px;
+      .eyebrow::before {
+        content: "";
+        width: 10px;
+        height: 10px;
         border-radius: 999px;
-        background: #fff;
-        box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.2);
+        background: var(--sun);
+        box-shadow: 0 0 0 8px rgba(224, 165, 38, 0.24);
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
       }
 
       h1 {
         max-width: 860px;
-        margin: 0;
-        font-size: 72px;
-        line-height: 1.05;
+        margin-bottom: 22px;
+        color: #fff;
+        font-size: clamp(3rem, 8vw, 6.7rem);
+        line-height: 1.02;
         letter-spacing: 0;
         font-weight: 900;
       }
 
-      .hero-text {
+      .hero-lead {
         max-width: 700px;
-        margin: 20px 0 0;
+        margin-bottom: 30px;
+        color: rgba(255, 255, 255, 0.86);
         font-size: 20px;
-        line-height: 1.75;
+        line-height: 1.85;
         font-weight: 500;
       }
 
-      .hero-meta {
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .hero-ribbon {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
         margin-top: 28px;
       }
 
-      .pill {
+      .ribbon-item {
+        min-height: 40px;
         display: inline-flex;
         align-items: center;
-        min-height: 40px;
-        padding: 0 16px;
-        border: 1px solid rgba(255, 255, 255, 0.42);
+        border: 1px solid rgba(255, 255, 255, 0.32);
         border-radius: 999px;
-        background: rgba(255, 255, 255, 0.18);
-        backdrop-filter: blur(16px);
-        font-weight: 700;
+        background: rgba(255, 255, 255, 0.16);
+        color: rgba(255, 255, 255, 0.94);
+        padding: 0 14px;
+        font-size: 14px;
+        font-weight: 900;
+        backdrop-filter: blur(14px);
+      }
+
+      .button {
+        min-height: 46px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        border-radius: 999px;
+        padding: 0 18px;
+        font-weight: 900;
+        text-decoration: none;
+        transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+      }
+
+      .button::after {
+        content: "→";
+        transform: translateX(0);
+        transition: transform 180ms ease;
+      }
+
+      .button:hover::after {
+        transform: translateX(3px);
+      }
+
+      .button-primary {
+        background: #fff;
+        color: var(--ink);
+        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
+      }
+
+      .button-secondary {
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.13);
+        color: #fff;
+        backdrop-filter: blur(14px);
+      }
+
+      .quick-facts {
+        position: relative;
+        z-index: 2;
+        margin-top: -42px;
+      }
+
+      .facts-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+
+      .fact {
+        min-height: 118px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.92);
+        padding: 20px;
+        box-shadow: var(--shadow);
+        transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+      }
+
+      .fact:hover {
+        transform: translateY(-3px);
+        border-color: var(--line-strong);
+        box-shadow: 0 22px 48px rgba(20, 24, 23, 0.13);
+      }
+
+      .fact span {
+        display: block;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .fact strong {
+        display: block;
+        margin-top: 8px;
+        color: var(--ink);
+        font-size: 22px;
+        line-height: 1.25;
       }
 
       section {
-        padding: 86px 0;
+        scroll-margin-top: 78px;
+        padding: 88px 0;
       }
 
       .section-head {
         display: grid;
-        grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.7fr);
+        grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.65fr);
         gap: 28px;
         align-items: end;
-        margin-bottom: 28px;
+        margin-bottom: 32px;
+      }
+
+      .section-label {
+        display: inline-flex;
+        margin-bottom: 12px;
+        color: var(--forest);
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: 0.04em;
       }
 
       h2 {
-        margin: 0;
-        font-size: 44px;
-        line-height: 1.16;
+        margin-bottom: 0;
+        color: var(--ink);
+        font-size: clamp(2.1rem, 4.2vw, 4rem);
+        line-height: 1.12;
         letter-spacing: 0;
         font-weight: 900;
       }
 
-      .lead {
-        margin: 0;
+      .section-copy {
+        margin-bottom: 0;
         color: var(--muted);
         font-size: 17px;
-        line-height: 1.8;
+        line-height: 1.85;
       }
 
-      .department-grid,
-      .activity-grid,
-      .sponsor-grid {
+      .dept-grid {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 12px;
       }
 
-      .department {
-        min-height: 156px;
+      .dept-card,
+      .activity-card,
+      .sponsor-card,
+      .location-card,
+      .event-card {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--surface);
+      }
+
+      .dept-card {
+        min-height: 178px;
         padding: 22px;
-        border-radius: 8px;
-        background: var(--paper);
-        border: 1px solid var(--line);
-        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
-      }
-
-      .department strong {
-        display: block;
-        margin-bottom: 10px;
-        font-size: 24px;
-      }
-
-      .department span,
-      .activity p,
-      .location p,
-      .sponsor p {
-        color: var(--muted);
-        line-height: 1.7;
-      }
-
-      .intro-band {
-        background: #111113;
-        color: #fff;
-      }
-
-      .intro-band .lead {
-        color: rgba(255, 255, 255, 0.72);
-      }
-
-      .intro-copy {
-        max-width: 860px;
-        font-size: 30px;
-        line-height: 1.55;
-        font-weight: 800;
-      }
-
-      .activity-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .activity {
-        min-height: 250px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding: 24px;
-        border-radius: 8px;
+        position: relative;
         overflow: hidden;
-        background: var(--paper);
-        border: 1px solid var(--line);
+        transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+      }
+
+      .dept-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: var(--accent);
+      }
+
+      .dept-card:hover {
+        transform: translateY(-3px);
+        border-color: var(--line-strong);
         box-shadow: var(--shadow);
       }
 
-      .activity .tag {
-        width: fit-content;
-        margin-bottom: 54px;
-        padding: 7px 11px;
+      .dept-card strong {
+        display: block;
+        margin-bottom: 12px;
+        color: var(--ink);
+        font-size: 24px;
+      }
+
+      .dept-card p {
+        margin-bottom: 0;
+        color: var(--muted);
+      }
+
+      .story-band {
+        background:
+          linear-gradient(135deg, rgba(20, 86, 70, 0.98), rgba(16, 22, 21, 0.96)),
+          url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1800&q=82")
+            center / cover;
+        color: #fff;
+      }
+
+      .story-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 44px;
+        align-items: center;
+      }
+
+      .story-title {
+        color: #fff;
+      }
+
+      .story-copy {
+        margin-bottom: 0;
+        color: rgba(255, 255, 255, 0.74);
+        font-size: 19px;
+        line-height: 1.9;
+      }
+
+      .story-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .story-item {
+        display: grid;
+        grid-template-columns: 44px 1fr;
+        gap: 14px;
+        align-items: start;
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.07);
+        padding: 16px;
+        transition: transform 180ms ease, background 180ms ease;
+      }
+
+      .story-item:hover {
+        transform: translateX(4px);
+        background: rgba(255, 255, 255, 0.11);
+      }
+
+      .energy-strip {
+        padding: 0;
+        background: #fff;
+      }
+
+      .energy-layout {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 0;
+        min-height: 520px;
+      }
+
+      .energy-copy {
+        display: grid;
+        align-content: center;
+        padding: 72px max(24px, calc((100vw - var(--max)) / 2)) 72px 32px;
+        background:
+          linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(255, 250, 225, 0.9)),
+          repeating-linear-gradient(135deg, rgba(224, 165, 38, 0.16) 0 2px, transparent 2px 18px);
+      }
+
+      .energy-copy h2 {
+        max-width: 640px;
+      }
+
+      .energy-copy p {
+        max-width: 640px;
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.85;
+      }
+
+      .energy-photo-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px;
+        background: var(--night);
+      }
+
+      .energy-photo {
+        min-height: 240px;
+        overflow: hidden;
+        border-radius: var(--radius);
+      }
+
+      .energy-photo:first-child {
+        grid-row: span 2;
+      }
+
+      .energy-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 420ms ease, filter 420ms ease;
+      }
+
+      .energy-photo:hover img {
+        transform: scale(1.06);
+        filter: saturate(1.12);
+      }
+
+      .story-icon {
+        width: 44px;
+        height: 44px;
+        display: grid;
+        place-items: center;
+        border-radius: var(--radius);
+        background: rgba(224, 165, 38, 0.18);
+        color: #ffe2a3;
+      }
+
+      .story-item strong {
+        display: block;
+        margin-bottom: 4px;
+        color: #fff;
+      }
+
+      .story-item span {
+        color: rgba(255, 255, 255, 0.68);
+      }
+
+      .activity-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+      }
+
+      .activity-card {
+        min-height: 278px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        box-shadow: 0 12px 32px rgba(20, 24, 23, 0.07);
+        transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+      }
+
+      .activity-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--line-strong);
+        box-shadow: 0 24px 54px rgba(20, 24, 23, 0.16);
+      }
+
+      .activity-image {
+        min-height: 116px;
+        background:
+          linear-gradient(135deg, rgba(20, 86, 70, 0.88), rgba(23, 109, 143, 0.72)),
+          var(--image);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .camp-mosaic {
+        background:
+          linear-gradient(180deg, rgba(246, 247, 244, 0), #fff 24%, #fff 76%, rgba(246, 247, 244, 0));
+      }
+
+      .mosaic-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr 1fr;
+        grid-auto-rows: 180px;
+        gap: 12px;
+      }
+
+      .mosaic-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: var(--radius);
+        background: var(--surface-soft);
+        box-shadow: var(--shadow);
+      }
+
+      .mosaic-card.large {
+        grid-row: span 2;
+      }
+
+      .mosaic-card.wide {
+        grid-column: span 2;
+      }
+
+      .mosaic-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 420ms ease;
+      }
+
+      .mosaic-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .mosaic-label {
+        position: absolute;
+        left: 14px;
+        bottom: 14px;
         border-radius: 999px;
-        background: rgba(0, 113, 227, 0.1);
-        color: var(--blue);
+        background: rgba(255, 255, 255, 0.84);
+        color: var(--ink);
+        padding: 7px 12px;
+        font-size: 13px;
+        font-weight: 900;
+        backdrop-filter: blur(12px);
+      }
+
+      .activity-body {
+        padding: 22px;
+      }
+
+      .activity-meta {
+        display: inline-flex;
+        margin-bottom: 12px;
+        border-radius: 999px;
+        background: rgba(20, 86, 70, 0.1);
+        color: var(--forest);
+        padding: 5px 10px;
         font-size: 13px;
         font-weight: 900;
       }
 
-      .activity h3,
-      .location h3,
-      .sponsor h3 {
-        margin: 0 0 8px;
+      h3 {
+        margin-bottom: 8px;
+        color: var(--ink);
         font-size: 24px;
         line-height: 1.25;
+        font-weight: 900;
+      }
+
+      .activity-card p,
+      .location-card p,
+      .sponsor-card p {
+        margin-bottom: 0;
+        color: var(--muted);
       }
 
       .timeline {
         display: grid;
         gap: 0;
         border-top: 1px solid var(--line);
+        position: relative;
       }
 
       .day {
         display: grid;
-        grid-template-columns: 190px 1fr;
+        grid-template-columns: 180px 1fr;
         gap: 28px;
         padding: 30px 0;
         border-bottom: 1px solid var(--line);
@@ -291,103 +704,151 @@
 
       .day-label {
         position: sticky;
-        top: 72px;
+        top: 84px;
         align-self: start;
-        font-size: 24px;
+        color: var(--ink);
+        font-size: 28px;
         font-weight: 900;
       }
 
-      .day-events {
+      .day-label small {
+        display: block;
+        color: var(--muted);
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .event-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
       }
 
-      .event {
+      .event-card {
+        min-height: 82px;
         display: grid;
-        grid-template-columns: 92px 1fr;
+        grid-template-columns: 88px 1fr;
         gap: 14px;
-        min-height: 74px;
         padding: 16px;
-        border-radius: 8px;
-        background: var(--paper);
-        border: 1px solid var(--line);
+        transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
       }
 
-      .time {
-        color: var(--blue);
+      .event-card:hover {
+        transform: translateX(4px);
+        background: #fffdf7;
+        box-shadow: 0 14px 30px rgba(20, 24, 23, 0.08);
+      }
+
+      .event-time {
+        color: var(--sea);
         font-size: 14px;
         font-weight: 900;
       }
 
-      .event strong {
+      .event-card strong {
         display: block;
-        margin-bottom: 4px;
+        margin-bottom: 3px;
+        color: var(--ink);
       }
 
-      .event span {
+      .event-card span {
         color: var(--muted);
-        line-height: 1.6;
       }
 
       .location-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 14px;
+        gap: 16px;
       }
 
-      .location {
-        min-height: 260px;
+      .location-card {
+        min-height: 318px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 28px;
-        border-radius: 8px;
-        border: 1px solid var(--line);
-        background: var(--paper);
         box-shadow: var(--shadow);
+        overflow: hidden;
+        position: relative;
       }
 
-      .location .map-label {
-        display: inline-block;
-        margin-top: 28px;
-        padding: 9px 13px;
-        border-radius: 999px;
-        background: #f0f0f3;
+      .location-card::before {
+        content: "";
+        position: absolute;
+        inset: 0 0 auto;
+        height: 7px;
+        background: linear-gradient(90deg, var(--forest), var(--sky), var(--sun));
+      }
+
+      .location-card address {
+        margin-top: 16px;
+        color: var(--ink);
+        font-style: normal;
+        font-weight: 800;
+      }
+
+      .map-slot {
+        min-height: 92px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 24px;
+        border-radius: var(--radius);
+        background: var(--surface-soft);
+        padding: 18px;
         color: var(--muted);
-        font-size: 14px;
-        font-weight: 700;
+        font-weight: 800;
+      }
+
+      .map-slot svg {
+        flex: 0 0 auto;
+        color: var(--forest);
       }
 
       .sponsor-section {
-        background: #fff;
+        background:
+          linear-gradient(135deg, rgba(183, 216, 75, 0.18), rgba(78, 179, 216, 0.12)),
+          #fff;
       }
 
       .sponsor-grid {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
       }
 
-      .sponsor {
-        min-height: 260px;
+      .sponsor-card {
+        min-height: 312px;
         padding: 24px;
-        border-radius: 8px;
-        border: 1px solid var(--line);
-        background: #fbfbfd;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.76)),
+          var(--sponsor-bg, #fbfbfd);
+        transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+      }
+
+      .sponsor-card:hover {
+        transform: translateY(-2px);
+        border-color: var(--line-strong);
+        box-shadow: var(--shadow);
       }
 
       .logo-box {
-        width: 96px;
-        height: 96px;
+        width: 104px;
+        height: 104px;
         display: grid;
         place-items: center;
         margin-bottom: 22px;
-        border-radius: 8px;
-        background: #fff;
-        border: 1px dashed rgba(29, 29, 31, 0.24);
+        border: 1px dashed rgba(20, 24, 23, 0.28);
+        border-radius: var(--radius);
+        background: var(--surface-soft);
         color: var(--muted);
         font-weight: 900;
       }
 
       .sponsor-info {
         display: grid;
-        gap: 8px;
+        gap: 7px;
         margin-top: 16px;
         color: var(--muted);
         font-size: 14px;
@@ -395,104 +856,220 @@
 
       .contact-panel {
         display: grid;
-        grid-template-columns: 1.1fr 0.9fr;
+        grid-template-columns: 1fr 0.8fr;
         gap: 24px;
         align-items: center;
-        padding: 38px;
-        border-radius: 8px;
-        background: #111113;
+        border-radius: var(--radius);
+        background:
+          linear-gradient(135deg, rgba(20, 86, 70, 0.96), rgba(16, 22, 21, 0.98)),
+          var(--night);
+        color: #fff;
+        padding: 40px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .contact-panel::after {
+        content: "";
+        position: absolute;
+        right: -60px;
+        bottom: -80px;
+        width: 260px;
+        height: 260px;
+        border: 36px solid rgba(224, 165, 38, 0.24);
+        transform: rotate(18deg);
+      }
+
+      .contact-panel h2 {
         color: #fff;
       }
 
       .contact-panel p {
-        color: rgba(255, 255, 255, 0.72);
+        margin-bottom: 0;
+        color: rgba(255, 255, 255, 0.75);
       }
 
       .contact-list {
         display: grid;
         gap: 10px;
+        position: relative;
+        z-index: 1;
       }
 
       .contact-item {
-        padding: 16px;
-        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        min-height: 54px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: var(--radius);
         background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 14px 16px;
+        color: rgba(255, 255, 255, 0.86);
+        font-weight: 800;
       }
 
       footer {
-        padding: 26px 0 42px;
+        padding: 28px 0 44px;
         color: var(--muted);
         text-align: center;
         font-size: 14px;
       }
 
-      @media (max-width: 920px) {
-        .links {
+      .reveal {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+
+      .reveal.is-visible {
+        animation: rise 620ms ease both;
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      @media (max-width: 980px) {
+        .nav-links {
           display: none;
         }
 
-        .hero {
-          min-height: 92svh;
+        .quick-facts {
+          margin-top: 16px;
         }
 
-        .hero-content {
-          padding: 92px 0 60px;
-        }
-
-        h1 {
-          font-size: 46px;
-        }
-
-        h2 {
-          font-size: 34px;
-        }
-
-        .hero-text,
-        .lead {
-          font-size: 16px;
+        .facts-grid,
+        .dept-grid,
+        .activity-grid,
+        .sponsor-grid {
+          grid-template-columns: repeat(2, 1fr);
         }
 
         .section-head,
+        .story-grid,
+        .energy-layout,
         .location-grid,
         .contact-panel {
           grid-template-columns: 1fr;
         }
 
-        .department-grid,
-        .activity-grid,
-        .sponsor-grid {
-          grid-template-columns: 1fr;
+        .energy-copy {
+          padding: 64px 24px;
         }
 
-        .intro-copy {
-          font-size: 24px;
+        .mosaic-grid {
+          grid-template-columns: 1fr 1fr;
         }
 
         .day {
           grid-template-columns: 1fr;
-          gap: 16px;
         }
 
         .day-label {
           position: static;
         }
+      }
 
-        .day-events {
+      @media (max-width: 640px) {
+        .wrap {
+          width: min(100% - 24px, var(--max));
+        }
+
+        .hero {
+          min-height: 88dvh;
+        }
+
+        .hero-content {
+          padding: 64px 0 76px;
+        }
+
+        .hero-lead {
+          font-size: 17px;
+        }
+
+        .hero-actions {
+          align-items: stretch;
+          flex-direction: column;
+        }
+
+        .button {
+          width: 100%;
+        }
+
+        section {
+          padding: 64px 0;
+        }
+
+        .facts-grid,
+        .dept-grid,
+        .activity-grid,
+        .event-grid,
+        .sponsor-grid,
+        .energy-photo-grid,
+        .mosaic-grid {
           grid-template-columns: 1fr;
         }
 
-        .event {
-          grid-template-columns: 82px 1fr;
+        .energy-photo:first-child,
+        .mosaic-card.large,
+        .mosaic-card.wide {
+          grid-row: auto;
+          grid-column: auto;
+        }
+
+        .energy-photo,
+        .mosaic-card {
+          min-height: 220px;
+        }
+
+        .fact,
+        .dept-card,
+        .activity-card,
+        .sponsor-card,
+        .location-card,
+        .contact-panel {
+          box-shadow: none;
+        }
+
+        .event-card {
+          grid-template-columns: 78px 1fr;
+        }
+
+        .contact-panel {
+          padding: 26px;
         }
       }
     </style>
   </head>
   <body>
-    <header class="nav">
-      <div class="wrap nav-inner">
-        <div class="brand">2026 五系聯合迎新宿營</div>
-        <nav class="links" aria-label="頁面導覽">
+    <a class="skip-link" href="#main">跳到主要內容</a>
+
+    <header class="site-header">
+      <div class="wrap nav">
+        <a class="brand" href="#top" aria-label="回到頁首">
+          <span class="brand-mark" aria-hidden="true"></span>
+          2026 五系聯合迎新宿營
+        </a>
+        <nav class="nav-links" aria-label="頁面導覽">
           <a href="#departments">參與系所</a>
           <a href="#activities">活動內容</a>
           <a href="#schedule">三天流程</a>
@@ -502,191 +1079,318 @@
       </div>
     </header>
 
-    <main>
-      <section class="hero" aria-label="活動主視覺">
-        <div class="wrap hero-content">
-          <div class="kicker"><span class="dot"></span>2026.10.09 - 10.11</div>
+    <main id="main">
+      <section id="top" class="hero" aria-label="活動主視覺">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="wrap hero-content reveal">
+          <div class="eyebrow">2026.10.09 至 10.11</div>
           <h1>中山五系聯合迎新宿營</h1>
-          <p class="hero-text">
-            一場為新生準備的三天兩夜旅程。從破冰到晚會，從校園出發到走馬瀨農場，
-            讓不同系的新朋友在活動裡相遇、熟悉，開始大學生活的第一段共同記憶。
+          <p class="hero-lead">
+            從校園集合出發，到走馬瀨農場完成三天兩夜的團隊任務。這是一場讓新生認識彼此、熟悉系上與建立跨系連結的迎新旅程。
           </p>
-          <div class="hero-meta">
-            <span class="pill">醫科</span>
-            <span class="pill">外文</span>
-            <span class="pill">光電</span>
-            <span class="pill">機電</span>
-            <span class="pill">生科</span>
+          <div class="hero-actions" aria-label="主要行動">
+            <a class="button button-primary" href="#activities">探索活動內容</a>
+            <a class="button button-secondary" href="#sponsors">查看贊助資訊</a>
+          </div>
+          <div class="hero-ribbon" aria-label="活動特色">
+            <span class="ribbon-item">跨系小隊</span>
+            <span class="ribbon-item">戶外闖關</span>
+            <span class="ribbon-item">晚會舞台</span>
+            <span class="ribbon-item">在地探索</span>
           </div>
         </div>
       </section>
 
-      <section id="departments" class="wrap">
+      <aside class="quick-facts wrap reveal" aria-label="活動快速資訊">
+        <div class="facts-grid">
+          <div class="fact">
+            <span>日期</span>
+            <strong>10/9 至 10/11</strong>
+          </div>
+          <div class="fact">
+            <span>參與</span>
+            <strong>五系聯合</strong>
+          </div>
+          <div class="fact">
+            <span>地點</span>
+            <strong>中山大學與走馬瀨</strong>
+          </div>
+          <div class="fact">
+            <span>活動</span>
+            <strong>破冰、夜教、晚會</strong>
+          </div>
+        </div>
+      </aside>
+
+      <section id="departments" class="wrap reveal">
         <div class="section-head">
-          <h2>五個系，一起開場。</h2>
-          <p class="lead">
-            這次宿營由醫科、外文、光電、機電、生科共同參與，讓新生在系內交流之外，也能提早建立跨系朋友圈。
+          <div>
+            <span class="section-label">Departments</span>
+            <h2>五個系，一起開場。</h2>
+          </div>
+          <p class="section-copy">
+            這次宿營串起醫科、外文、光電、機電、生科。新生可以在系內熟悉之外，也提早認識不同背景的夥伴。
           </p>
         </div>
-        <div class="department-grid">
-          <article class="department">
+        <div class="dept-grid">
+          <article class="dept-card" style="--accent: var(--coral)">
             <strong>醫科</strong>
-            <span>以團隊合作與關懷精神，加入這場迎新旅程。</span>
+            <p>以關懷與團隊合作為核心，陪新生打開第一段大學生活。</p>
           </article>
-          <article class="department">
+          <article class="dept-card" style="--accent: var(--sea)">
             <strong>外文</strong>
-            <span>帶來語言、人文與交流的活力。</span>
+            <p>帶來語言、人文與交流的能量，讓跨系互動更自然。</p>
           </article>
-          <article class="department">
+          <article class="dept-card" style="--accent: var(--sun)">
             <strong>光電</strong>
-            <span>用理工人的細膩與創意點亮活動。</span>
+            <p>用理工人的細膩和創意，讓任務設計更有亮點。</p>
           </article>
-          <article class="department">
+          <article class="dept-card" style="--accent: var(--forest)">
             <strong>機電</strong>
-            <span>把執行力和行動感帶進團隊任務。</span>
+            <p>把執行力與行動感帶進隊伍，支撐活動穩定推進。</p>
           </article>
-          <article class="department">
+          <article class="dept-card" style="--accent: #7a5ccf">
             <strong>生科</strong>
-            <span>以探索精神與自然觀察感加入宿營。</span>
+            <p>以探索精神與自然觀察感，加入戶外宿營的節奏。</p>
           </article>
         </div>
       </section>
 
-      <section class="intro-band">
-        <div class="wrap">
-          <p class="intro-copy">
-            這不只是行程表，而是一個讓新生降低陌生感、建立歸屬感、看見彼此的活動設計。
-          </p>
-          <p class="lead">
-            企劃核心聚焦在人際連結、分組合作與團隊互動。透過密集但有節奏的活動安排，讓新生在入學初期就有機會認識同儕、學長姐與不同系的夥伴。
-          </p>
+      <section class="story-band reveal">
+        <div class="wrap story-grid">
+          <div>
+            <span class="section-label" style="color: #ffe2a3">Purpose</span>
+            <h2 class="story-title">降低陌生感，建立第一個歸屬感。</h2>
+            <p class="story-copy">
+              活動設計聚焦在人際連結、分組合作和共同記憶。透過密集但有節奏的互動，新生能在入學初期更快認識同儕、學長姐與跨系夥伴。
+            </p>
+          </div>
+          <div class="story-list" aria-label="活動目的重點">
+            <div class="story-item">
+              <div class="story-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 11a4 4 0 1 1 8 0v1h1a3 3 0 0 1 0 6H8a4 4 0 0 1-1-7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div><strong>安心破冰</strong><span>用輕鬆任務讓第一次見面的同學更快開口。</span></div>
+            </div>
+            <div class="story-item">
+              <div class="story-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 17 10 5l4 8 2-4 4 8H4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div><strong>戶外合作</strong><span>大地與水大地活動讓小隊在行動中建立默契。</span></div>
+            </div>
+            <div class="story-item">
+              <div class="story-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3v18M5 8h14M7 16h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div><strong>共同收束</strong><span>晚會、結業和自由活動，讓記憶有完整的開始與結尾。</span></div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="activities" class="wrap">
+      <section class="energy-strip reveal" aria-label="宿營氛圍照片">
+        <div class="energy-layout">
+          <div class="energy-copy">
+            <span class="section-label">Vibe</span>
+            <h2>不是只有行程，是一整段會記得很久的夏末節奏。</h2>
+            <p>
+              我把中段改成更像活動官網的照片敘事：有集合、闖關、舞台、移動和自由活動的畫面感。之後你有實際活動照片，也能直接替換這些圖。
+            </p>
+          </div>
+          <div class="energy-photo-grid">
+            <figure class="energy-photo">
+              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=82" alt="一群學生朋友在戶外聚會互動" loading="lazy" />
+            </figure>
+            <figure class="energy-photo">
+              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=82" alt="戶外自然場域和開闊草地" loading="lazy" />
+            </figure>
+            <figure class="energy-photo">
+              <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=82" alt="活動舞台與燈光氣氛" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="activities" class="wrap reveal">
         <div class="section-head">
-          <h2>活動內容</h2>
-          <p class="lead">
-            每一段活動都有不同任務：有些讓大家打開話題，有些建立默契，有些則留下宿營最熱鬧的共同回憶。
+          <div>
+            <span class="section-label">Activities</span>
+            <h2>活動內容</h2>
+          </div>
+          <p class="section-copy">
+            每段活動都有明確任務：打開話題、建立默契、挑戰合作，最後留下屬於五系聯合宿營的共同回憶。
           </p>
         </div>
         <div class="activity-grid">
-          <article class="activity">
-            <div class="tag">Day 1</div>
-            <h3>破冰活動</h3>
-            <p>透過輕鬆互動與小隊任務，讓新生先認識隊友與活動氛圍。</p>
+          <article class="activity-card">
+            <div class="activity-image" style="--image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=78')" aria-hidden="true"></div>
+            <div class="activity-body"><span class="activity-meta">Day 1</span><h3>破冰活動</h3><p>透過小隊互動和輕任務，讓新生快速認識隊友與營隊節奏。</p></div>
           </article>
-          <article class="activity">
-            <div class="tag">Day 1</div>
-            <h3>夜教</h3>
-            <p>以夜間情境與團隊挑戰創造共同經驗，提升小隊凝聚力。</p>
+          <article class="activity-card">
+            <div class="activity-image" style="--image: url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=900&q=78')" aria-hidden="true"></div>
+            <div class="activity-body"><span class="activity-meta">Day 1</span><h3>夜教</h3><p>用夜間情境和團隊挑戰創造共同經驗，提高小隊凝聚力。</p></div>
           </article>
-          <article class="activity">
-            <div class="tag">Day 2</div>
-            <h3>大地遊戲</h3>
-            <p>讓各小隊在闖關、合作與競賽中快速建立默契。</p>
+          <article class="activity-card">
+            <div class="activity-image" style="--image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=78')" aria-hidden="true"></div>
+            <div class="activity-body"><span class="activity-meta">Day 2</span><h3>大地遊戲</h3><p>在闖關、競賽和合作任務中，讓各隊自然建立策略與默契。</p></div>
           </article>
-          <article class="activity">
-            <div class="tag">Day 2</div>
-            <h3>水大地</h3>
-            <p>加入水上元素與戶外挑戰，讓活動更有夏日感和參與感。</p>
+          <article class="activity-card">
+            <div class="activity-image" style="--image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=78')" aria-hidden="true"></div>
+            <div class="activity-body"><span class="activity-meta">Day 2</span><h3>水大地</h3><p>加入水上元素與戶外挑戰，讓活動更有夏日感和參與感。</p></div>
           </article>
-          <article class="activity">
-            <div class="tag">Day 2</div>
-            <h3>晚會表演</h3>
-            <p>以表演、互動與舞台節目把第二天推向最熱鬧的高潮。</p>
+          <article class="activity-card">
+            <div class="activity-image" style="--image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=78')" aria-hidden="true"></div>
+            <div class="activity-body"><span class="activity-meta">Day 2</span><h3>晚會表演</h3><p>以舞台節目、表演和全體互動，把第二天推向最熱鬧的高潮。</p></div>
           </article>
-          <article class="activity">
-            <div class="tag">Day 3</div>
-            <h3>安平老街</h3>
-            <p>在結業後安排自由活動，讓大家用比較放鬆的方式收尾。</p>
+          <article class="activity-card">
+            <div class="activity-image" style="--image: url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=78')" aria-hidden="true"></div>
+            <div class="activity-body"><span class="activity-meta">Day 3</span><h3>安平老街</h3><p>結業後安排自由活動，讓大家用更放鬆的方式替宿營收尾。</p></div>
           </article>
         </div>
       </section>
 
-      <section id="schedule" class="wrap">
+      <section class="camp-mosaic reveal" aria-label="活動畫面牆">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <span class="section-label">Moments</span>
+              <h2>把宿營的畫面感放進頁面裡。</h2>
+            </div>
+            <p class="section-copy">
+              這裡適合放活動紀錄、預告照或贊助商合作照。現在先用免授權圖庫做氛圍示意。
+            </p>
+          </div>
+          <div class="mosaic-grid">
+            <figure class="mosaic-card large">
+              <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1000&q=82" alt="大學生朋友在校園草地上交流" loading="lazy" />
+              <figcaption class="mosaic-label">校園集合</figcaption>
+            </figure>
+            <figure class="mosaic-card">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=82" alt="海邊與水上活動氛圍" loading="lazy" />
+              <figcaption class="mosaic-label">水大地</figcaption>
+            </figure>
+            <figure class="mosaic-card">
+              <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=900&q=82" alt="朋友們舉杯慶祝活動" loading="lazy" />
+              <figcaption class="mosaic-label">小隊交流</figcaption>
+            </figure>
+            <figure class="mosaic-card wide">
+              <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1200&q=82" alt="夜晚活動與表演燈光" loading="lazy" />
+              <figcaption class="mosaic-label">晚會高潮</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule" class="wrap reveal">
         <div class="section-head">
-          <h2>三天流程</h2>
-          <p class="lead">
-            以時間軸呈現活動節奏，方便新生、幹部與審查者快速確認每天的安排。
+          <div>
+            <span class="section-label">Schedule</span>
+            <h2>三天流程</h2>
+          </div>
+          <p class="section-copy">
+            用時間軸快速對照每日安排，讓新生、幹部、家長和審查者都能清楚掌握活動節奏。
           </p>
         </div>
         <div class="timeline">
           <div class="day">
-            <div class="day-label">10/9</div>
-            <div class="day-events">
-              <div class="event"><div class="time">19:00</div><div><strong>集合</strong><span>完成報到與小隊整隊。</span></div></div>
-              <div class="event"><div class="time">19:00</div><div><strong>破冰</strong><span>開啟小隊互動與活動氛圍。</span></div></div>
-              <div class="event"><div class="time">20:00</div><div><strong>夜教</strong><span>夜間團隊任務與情境活動。</span></div></div>
-              <div class="event"><div class="time">21:30</div><div><strong>宵夜</strong><span>補充體力，也讓小隊自由交流。</span></div></div>
+            <div class="day-label">10/9<small>第一天</small></div>
+            <div class="event-grid">
+              <div class="event-card"><div class="event-time">19:00</div><div><strong>集合</strong><span>完成報到與小隊整隊。</span></div></div>
+              <div class="event-card"><div class="event-time">19:00</div><div><strong>破冰</strong><span>開啟小隊互動與活動氛圍。</span></div></div>
+              <div class="event-card"><div class="event-time">20:00</div><div><strong>夜教</strong><span>夜間團隊任務與情境活動。</span></div></div>
+              <div class="event-card"><div class="event-time">21:30</div><div><strong>宵夜</strong><span>補充體力，也讓小隊自由交流。</span></div></div>
             </div>
           </div>
           <div class="day">
-            <div class="day-label">10/10</div>
-            <div class="day-events">
-              <div class="event"><div class="time">07:30</div><div><strong>集合</strong><span>出發前確認人員與物資。</span></div></div>
-              <div class="event"><div class="time">08:00</div><div><strong>發車</strong><span>前往走馬瀨農場。</span></div></div>
-              <div class="event"><div class="time">10:00</div><div><strong>抵達</strong><span>場地確認與活動準備。</span></div></div>
-              <div class="event"><div class="time">10:00</div><div><strong>大地遊戲</strong><span>闖關、競賽與小隊合作。</span></div></div>
-              <div class="event"><div class="time">13:30</div><div><strong>水大地</strong><span>戶外水上活動與團隊挑戰。</span></div></div>
-              <div class="event"><div class="time">20:00</div><div><strong>晚會表演</strong><span>節目表演與全體互動。</span></div></div>
+            <div class="day-label">10/10<small>第二天</small></div>
+            <div class="event-grid">
+              <div class="event-card"><div class="event-time">07:30</div><div><strong>集合</strong><span>出發前確認人員與物資。</span></div></div>
+              <div class="event-card"><div class="event-time">08:00</div><div><strong>發車</strong><span>前往走馬瀨農場。</span></div></div>
+              <div class="event-card"><div class="event-time">10:00</div><div><strong>抵達</strong><span>場地確認與活動準備。</span></div></div>
+              <div class="event-card"><div class="event-time">10:00</div><div><strong>大地遊戲</strong><span>闖關、競賽與小隊合作。</span></div></div>
+              <div class="event-card"><div class="event-time">13:30</div><div><strong>水大地</strong><span>戶外水上活動與團隊挑戰。</span></div></div>
+              <div class="event-card"><div class="event-time">20:00</div><div><strong>晚會表演</strong><span>節目表演與全體互動。</span></div></div>
             </div>
           </div>
           <div class="day">
-            <div class="day-label">10/11</div>
-            <div class="day-events">
-              <div class="event"><div class="time">08:00</div><div><strong>早餐</strong><span>集合、用餐與精神整理。</span></div></div>
-              <div class="event"><div class="time">08:40</div><div><strong>大地遊戲</strong><span>最後一輪小隊任務。</span></div></div>
-              <div class="event"><div class="time">11:40</div><div><strong>結業</strong><span>活動總結與點心時間。</span></div></div>
-              <div class="event"><div class="time">12:40</div><div><strong>安平老街</strong><span>自由活動與小隊交流。</span></div></div>
-              <div class="event"><div class="time">17:00</div><div><strong>回程</strong><span>返程並完成活動收尾。</span></div></div>
+            <div class="day-label">10/11<small>第三天</small></div>
+            <div class="event-grid">
+              <div class="event-card"><div class="event-time">08:00</div><div><strong>早餐</strong><span>集合、用餐與精神整理。</span></div></div>
+              <div class="event-card"><div class="event-time">08:40</div><div><strong>大地遊戲</strong><span>最後一輪小隊任務。</span></div></div>
+              <div class="event-card"><div class="event-time">11:40</div><div><strong>結業</strong><span>活動總結與點心時間。</span></div></div>
+              <div class="event-card"><div class="event-time">12:40</div><div><strong>安平老街</strong><span>自由活動與小隊交流。</span></div></div>
+              <div class="event-card"><div class="event-time">17:00</div><div><strong>回程</strong><span>返程並完成活動收尾。</span></div></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="location" class="wrap">
+      <section id="location" class="wrap reveal">
         <div class="section-head">
-          <h2>活動地點</h2>
-          <p class="lead">
-            地點資訊分成集合地與主要活動地，讓參與者可以清楚知道去哪裡集合、去哪裡活動。
+          <div>
+            <span class="section-label">Location</span>
+            <h2>活動地點</h2>
+          </div>
+          <p class="section-copy">
+            集合地與主要活動地分開呈現，讓參與者知道何時到校、何時前往農場，以及活動主場域在哪裡。
           </p>
         </div>
         <div class="location-grid">
-          <article class="location">
-            <h3>集合地｜國立中山大學</h3>
-            <p>活動第一階段於校內集合，進行報到、人員確認、行前提醒與小隊整隊。</p>
-            <span class="map-label">可放校內集合點地圖</span>
+          <article class="location-card">
+            <div>
+              <h3>集合地｜國立中山大學</h3>
+              <p>活動第一階段於校內集合，進行報到、人員確認、行前提醒與小隊整隊。</p>
+              <address>高雄市鼓山區蓮海路70號</address>
+            </div>
+            <div class="map-slot">
+              <span>可加入校內集合點地圖</span>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-5.3 7-12a7 7 0 0 0-14 0c0 6.7 7 12 7 12Z" stroke="currentColor" stroke-width="2"/><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
           </article>
-          <article class="location">
-            <h3>主要活動地｜走馬瀨農場</h3>
-            <p>地址：臺南市大內區其子瓦60號。第二天主要活動於走馬瀨農場進行，包含大地遊戲、水大地與晚會安排。</p>
-            <span class="map-label">可嵌入 Google Map</span>
+          <article class="location-card">
+            <div>
+              <h3>主要活動地｜走馬瀨農場</h3>
+              <p>第二天主要活動於走馬瀨農場進行，包含大地遊戲、水大地與晚會安排。</p>
+              <address>臺南市大內區其子瓦60號</address>
+            </div>
+            <div class="map-slot">
+              <span>可嵌入 Google Map 或交通資訊</span>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M6 17h12M7 7l2-3h6l2 3M8 17v2M16 17v2M6 7h12v10H6V7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
           </article>
         </div>
       </section>
 
-      <section id="sponsors" class="sponsor-section">
+      <section id="sponsors" class="sponsor-section reveal">
         <div class="wrap">
           <div class="section-head">
-            <h2>特別感謝</h2>
-            <p class="lead">
-              這裡預留給贊助商 logo、店家資訊、贊助內容與優惠資訊。之後只要替換圖片與文字，就能成為正式公開版。
+            <div>
+              <span class="section-label">Sponsors</span>
+              <h2>特別感謝</h2>
+            </div>
+            <p class="section-copy">
+              贊助區預留 logo、店家名稱、贊助內容、地址與社群資訊。正式資料補上後，可以直接作為公開合作展示。
             </p>
           </div>
           <div class="sponsor-grid">
-            <article class="sponsor">
-              <div class="logo-box">LOGO</div>
+            <article class="sponsor-card" style="--sponsor-bg: rgba(224, 165, 38, 0.2)">
+              <div class="logo-box" aria-label="贊助商 A logo 預留位置">LOGO</div>
               <h3>店家名稱 A</h3>
-              <p>可放店家簡介，例如餐飲、飲料、文具、活動用品或在地合作店家。</p>
+              <p>可放餐飲、飲料、文具、活動用品或在地合作店家簡介。</p>
               <div class="sponsor-info">
                 <span>贊助內容：餐券 / 物資 / 優惠</span>
                 <span>地址：待補</span>
                 <span>社群：待補</span>
               </div>
             </article>
-            <article class="sponsor">
-              <div class="logo-box">LOGO</div>
+            <article class="sponsor-card" style="--sponsor-bg: rgba(78, 179, 216, 0.18)">
+              <div class="logo-box" aria-label="贊助商 B logo 預留位置">LOGO</div>
               <h3>店家名稱 B</h3>
               <p>可放合作亮點、優惠方式，或活動期間可使用的兌換資訊。</p>
               <div class="sponsor-info">
@@ -695,8 +1399,8 @@
                 <span>聯絡：待補</span>
               </div>
             </article>
-            <article class="sponsor">
-              <div class="logo-box">LOGO</div>
+            <article class="sponsor-card" style="--sponsor-bg: rgba(217, 75, 139, 0.16)">
+              <div class="logo-box" aria-label="贊助商 C logo 預留位置">LOGO</div>
               <h3>店家名稱 C</h3>
               <p>適合放更正式的合作單位、品牌或系上支持單位。</p>
               <div class="sponsor-info">
@@ -709,18 +1413,17 @@
         </div>
       </section>
 
-      <section class="wrap">
+      <section class="wrap reveal" aria-label="更多資訊">
         <div class="contact-panel">
           <div>
+            <span class="section-label" style="color: #ffe2a3">Contact</span>
             <h2>更多資訊</h2>
-            <p class="lead">
-              這裡可以放總召、活動窗口、報名表單、Instagram 或完整企劃書連結。
-            </p>
+            <p>這裡可以放總召、活動窗口、報名表單、Instagram 或完整企劃書連結。</p>
           </div>
           <div class="contact-list">
-            <div class="contact-item">總召 / 副召：待補</div>
-            <div class="contact-item">Instagram：待補</div>
-            <div class="contact-item">報名連結：待補</div>
+            <div class="contact-item"><span>總召 / 副召</span><span>待補</span></div>
+            <div class="contact-item"><span>Instagram</span><span>待補</span></div>
+            <div class="contact-item"><span>報名連結</span><span>待補</span></div>
           </div>
         </div>
       </section>
@@ -729,5 +1432,27 @@
     <footer>
       2026 中山五系聯合迎新宿營
     </footer>
+    <script>
+      const revealTargets = document.querySelectorAll(".reveal");
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if (prefersReducedMotion) {
+        revealTargets.forEach((target) => target.classList.add("is-visible"));
+      } else {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.16 }
+        );
+
+        revealTargets.forEach((target) => observer.observe(target));
+      }
+    </script>
   </body>
 </html>
