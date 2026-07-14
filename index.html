@@ -28,6 +28,9 @@
         --sea: #176d8f;
         --coral: #c85242;
         --sun: #e0a526;
+        --lime: #b7d84b;
+        --sky: #4eb3d8;
+        --berry: #d94b8b;
         --night: #101615;
         --focus: #0a84ff;
         --shadow: 0 18px 48px rgba(20, 24, 23, 0.11);
@@ -45,7 +48,11 @@
 
       body {
         margin: 0;
-        background: var(--bg);
+        background:
+          linear-gradient(90deg, rgba(20, 86, 70, 0.05) 1px, transparent 1px),
+          linear-gradient(180deg, rgba(20, 86, 70, 0.05) 1px, transparent 1px),
+          linear-gradient(180deg, #fffdf8 0%, var(--bg) 28%, #eef6f7 100%);
+        background-size: 42px 42px, 42px 42px, auto;
         color: var(--text);
         font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         font-size: 16px;
@@ -240,6 +247,27 @@
         gap: 12px;
       }
 
+      .hero-ribbon {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 28px;
+      }
+
+      .ribbon-item {
+        min-height: 40px;
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.32);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.16);
+        color: rgba(255, 255, 255, 0.94);
+        padding: 0 14px;
+        font-size: 14px;
+        font-weight: 900;
+        backdrop-filter: blur(14px);
+      }
+
       .button {
         min-height: 46px;
         display: inline-flex;
@@ -254,7 +282,17 @@
       }
 
       .button:hover {
-        transform: translateY(-1px);
+        transform: translateY(-2px);
+      }
+
+      .button::after {
+        content: "→";
+        transform: translateX(0);
+        transition: transform 180ms ease;
+      }
+
+      .button:hover::after {
+        transform: translateX(3px);
       }
 
       .button-primary {
@@ -289,6 +327,13 @@
         background: rgba(255, 255, 255, 0.92);
         padding: 20px;
         box-shadow: var(--shadow);
+        transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+      }
+
+      .fact:hover {
+        transform: translateY(-3px);
+        border-color: var(--line-strong);
+        box-shadow: 0 22px 48px rgba(20, 24, 23, 0.13);
       }
 
       .fact span {
@@ -399,7 +444,10 @@
       }
 
       .story-band {
-        background: var(--night);
+        background:
+          linear-gradient(135deg, rgba(20, 86, 70, 0.98), rgba(16, 22, 21, 0.96)),
+          url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1800&q=82")
+            center / cover;
         color: #fff;
       }
 
@@ -435,6 +483,75 @@
         border-radius: var(--radius);
         background: rgba(255, 255, 255, 0.07);
         padding: 16px;
+        transition: transform 180ms ease, background 180ms ease;
+      }
+
+      .story-item:hover {
+        transform: translateX(4px);
+        background: rgba(255, 255, 255, 0.11);
+      }
+
+      .energy-strip {
+        padding: 0;
+        background: #fff;
+      }
+
+      .energy-layout {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 0;
+        min-height: 520px;
+      }
+
+      .energy-copy {
+        display: grid;
+        align-content: center;
+        padding: 72px max(24px, calc((100vw - var(--max)) / 2)) 72px 32px;
+        background:
+          linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(255, 250, 225, 0.9)),
+          repeating-linear-gradient(135deg, rgba(224, 165, 38, 0.16) 0 2px, transparent 2px 18px);
+      }
+
+      .energy-copy h2 {
+        max-width: 640px;
+      }
+
+      .energy-copy p {
+        max-width: 640px;
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.85;
+      }
+
+      .energy-photo-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px;
+        background: var(--night);
+      }
+
+      .energy-photo {
+        min-height: 240px;
+        overflow: hidden;
+        border-radius: var(--radius);
+      }
+
+      .energy-photo:first-child {
+        grid-row: span 2;
+      }
+
+      .energy-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 420ms ease, filter 420ms ease;
+      }
+
+      .energy-photo:hover img {
+        transform: scale(1.06);
+        filter: saturate(1.12);
       }
 
       .story-icon {
@@ -470,6 +587,13 @@
         justify-content: space-between;
         overflow: hidden;
         box-shadow: 0 12px 32px rgba(20, 24, 23, 0.07);
+        transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+      }
+
+      .activity-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--line-strong);
+        box-shadow: 0 24px 54px rgba(20, 24, 23, 0.16);
       }
 
       .activity-image {
@@ -479,6 +603,58 @@
           var(--image);
         background-position: center;
         background-size: cover;
+      }
+
+      .camp-mosaic {
+        background:
+          linear-gradient(180deg, rgba(246, 247, 244, 0), #fff 24%, #fff 76%, rgba(246, 247, 244, 0));
+      }
+
+      .mosaic-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr 1fr;
+        grid-auto-rows: 180px;
+        gap: 12px;
+      }
+
+      .mosaic-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: var(--radius);
+        background: var(--surface-soft);
+        box-shadow: var(--shadow);
+      }
+
+      .mosaic-card.large {
+        grid-row: span 2;
+      }
+
+      .mosaic-card.wide {
+        grid-column: span 2;
+      }
+
+      .mosaic-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 420ms ease;
+      }
+
+      .mosaic-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .mosaic-label {
+        position: absolute;
+        left: 14px;
+        bottom: 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.84);
+        color: var(--ink);
+        padding: 7px 12px;
+        font-size: 13px;
+        font-weight: 900;
+        backdrop-filter: blur(12px);
       }
 
       .activity-body {
@@ -515,6 +691,7 @@
         display: grid;
         gap: 0;
         border-top: 1px solid var(--line);
+        position: relative;
       }
 
       .day {
@@ -553,6 +730,13 @@
         grid-template-columns: 88px 1fr;
         gap: 14px;
         padding: 16px;
+        transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
+      }
+
+      .event-card:hover {
+        transform: translateX(4px);
+        background: #fffdf7;
+        box-shadow: 0 14px 30px rgba(20, 24, 23, 0.08);
       }
 
       .event-time {
@@ -584,6 +768,16 @@
         justify-content: space-between;
         padding: 28px;
         box-shadow: var(--shadow);
+        overflow: hidden;
+        position: relative;
+      }
+
+      .location-card::before {
+        content: "";
+        position: absolute;
+        inset: 0 0 auto;
+        height: 7px;
+        background: linear-gradient(90deg, var(--forest), var(--sky), var(--sun));
       }
 
       .location-card address {
@@ -613,7 +807,9 @@
       }
 
       .sponsor-section {
-        background: #fff;
+        background:
+          linear-gradient(135deg, rgba(183, 216, 75, 0.18), rgba(78, 179, 216, 0.12)),
+          #fff;
       }
 
       .sponsor-grid {
@@ -625,11 +821,15 @@
       .sponsor-card {
         min-height: 312px;
         padding: 24px;
-        transition: transform 180ms ease, box-shadow 180ms ease;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.76)),
+          var(--sponsor-bg, #fbfbfd);
+        transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
       }
 
       .sponsor-card:hover {
         transform: translateY(-2px);
+        border-color: var(--line-strong);
         box-shadow: var(--shadow);
       }
 
@@ -665,6 +865,19 @@
           var(--night);
         color: #fff;
         padding: 40px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .contact-panel::after {
+        content: "";
+        position: absolute;
+        right: -60px;
+        bottom: -80px;
+        width: 260px;
+        height: 260px;
+        border: 36px solid rgba(224, 165, 38, 0.24);
+        transform: rotate(18deg);
       }
 
       .contact-panel h2 {
@@ -679,6 +892,8 @@
       .contact-list {
         display: grid;
         gap: 10px;
+        position: relative;
+        z-index: 1;
       }
 
       .contact-item {
@@ -703,7 +918,12 @@
       }
 
       .reveal {
-        animation: rise 520ms ease both;
+        opacity: 0;
+        transform: translateY(18px);
+      }
+
+      .reveal.is-visible {
+        animation: rise 620ms ease both;
       }
 
       @keyframes rise {
@@ -746,9 +966,18 @@
 
         .section-head,
         .story-grid,
+        .energy-layout,
         .location-grid,
         .contact-panel {
           grid-template-columns: 1fr;
+        }
+
+        .energy-copy {
+          padding: 64px 24px;
+        }
+
+        .mosaic-grid {
+          grid-template-columns: 1fr 1fr;
         }
 
         .day {
@@ -794,8 +1023,22 @@
         .dept-grid,
         .activity-grid,
         .event-grid,
-        .sponsor-grid {
+        .sponsor-grid,
+        .energy-photo-grid,
+        .mosaic-grid {
           grid-template-columns: 1fr;
+        }
+
+        .energy-photo:first-child,
+        .mosaic-card.large,
+        .mosaic-card.wide {
+          grid-row: auto;
+          grid-column: auto;
+        }
+
+        .energy-photo,
+        .mosaic-card {
+          min-height: 220px;
         }
 
         .fact,
@@ -849,10 +1092,16 @@
             <a class="button button-primary" href="#activities">探索活動內容</a>
             <a class="button button-secondary" href="#sponsors">查看贊助資訊</a>
           </div>
+          <div class="hero-ribbon" aria-label="活動特色">
+            <span class="ribbon-item">跨系小隊</span>
+            <span class="ribbon-item">戶外闖關</span>
+            <span class="ribbon-item">晚會舞台</span>
+            <span class="ribbon-item">在地探索</span>
+          </div>
         </div>
       </section>
 
-      <aside class="quick-facts wrap" aria-label="活動快速資訊">
+      <aside class="quick-facts wrap reveal" aria-label="活動快速資訊">
         <div class="facts-grid">
           <div class="fact">
             <span>日期</span>
@@ -873,7 +1122,7 @@
         </div>
       </aside>
 
-      <section id="departments" class="wrap">
+      <section id="departments" class="wrap reveal">
         <div class="section-head">
           <div>
             <span class="section-label">Departments</span>
@@ -907,7 +1156,7 @@
         </div>
       </section>
 
-      <section class="story-band">
+      <section class="story-band reveal">
         <div class="wrap story-grid">
           <div>
             <span class="section-label" style="color: #ffe2a3">Purpose</span>
@@ -945,7 +1194,30 @@
         </div>
       </section>
 
-      <section id="activities" class="wrap">
+      <section class="energy-strip reveal" aria-label="宿營氛圍照片">
+        <div class="energy-layout">
+          <div class="energy-copy">
+            <span class="section-label">Vibe</span>
+            <h2>不是只有行程，是一整段會記得很久的夏末節奏。</h2>
+            <p>
+              我把中段改成更像活動官網的照片敘事：有集合、闖關、舞台、移動和自由活動的畫面感。之後你有實際活動照片，也能直接替換這些圖。
+            </p>
+          </div>
+          <div class="energy-photo-grid">
+            <figure class="energy-photo">
+              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=82" alt="一群學生朋友在戶外聚會互動" loading="lazy" />
+            </figure>
+            <figure class="energy-photo">
+              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=82" alt="戶外自然場域和開闊草地" loading="lazy" />
+            </figure>
+            <figure class="energy-photo">
+              <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=82" alt="活動舞台與燈光氣氛" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="activities" class="wrap reveal">
         <div class="section-head">
           <div>
             <span class="section-label">Activities</span>
@@ -983,7 +1255,39 @@
         </div>
       </section>
 
-      <section id="schedule" class="wrap">
+      <section class="camp-mosaic reveal" aria-label="活動畫面牆">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <span class="section-label">Moments</span>
+              <h2>把宿營的畫面感放進頁面裡。</h2>
+            </div>
+            <p class="section-copy">
+              這裡適合放活動紀錄、預告照或贊助商合作照。現在先用免授權圖庫做氛圍示意。
+            </p>
+          </div>
+          <div class="mosaic-grid">
+            <figure class="mosaic-card large">
+              <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1000&q=82" alt="大學生朋友在校園草地上交流" loading="lazy" />
+              <figcaption class="mosaic-label">校園集合</figcaption>
+            </figure>
+            <figure class="mosaic-card">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=82" alt="海邊與水上活動氛圍" loading="lazy" />
+              <figcaption class="mosaic-label">水大地</figcaption>
+            </figure>
+            <figure class="mosaic-card">
+              <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=900&q=82" alt="朋友們舉杯慶祝活動" loading="lazy" />
+              <figcaption class="mosaic-label">小隊交流</figcaption>
+            </figure>
+            <figure class="mosaic-card wide">
+              <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1200&q=82" alt="夜晚活動與表演燈光" loading="lazy" />
+              <figcaption class="mosaic-label">晚會高潮</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule" class="wrap reveal">
         <div class="section-head">
           <div>
             <span class="section-label">Schedule</span>
@@ -1027,7 +1331,7 @@
         </div>
       </section>
 
-      <section id="location" class="wrap">
+      <section id="location" class="wrap reveal">
         <div class="section-head">
           <div>
             <span class="section-label">Location</span>
@@ -1063,7 +1367,7 @@
         </div>
       </section>
 
-      <section id="sponsors" class="sponsor-section">
+      <section id="sponsors" class="sponsor-section reveal">
         <div class="wrap">
           <div class="section-head">
             <div>
@@ -1075,7 +1379,7 @@
             </p>
           </div>
           <div class="sponsor-grid">
-            <article class="sponsor-card">
+            <article class="sponsor-card" style="--sponsor-bg: rgba(224, 165, 38, 0.2)">
               <div class="logo-box" aria-label="贊助商 A logo 預留位置">LOGO</div>
               <h3>店家名稱 A</h3>
               <p>可放餐飲、飲料、文具、活動用品或在地合作店家簡介。</p>
@@ -1085,7 +1389,7 @@
                 <span>社群：待補</span>
               </div>
             </article>
-            <article class="sponsor-card">
+            <article class="sponsor-card" style="--sponsor-bg: rgba(78, 179, 216, 0.18)">
               <div class="logo-box" aria-label="贊助商 B logo 預留位置">LOGO</div>
               <h3>店家名稱 B</h3>
               <p>可放合作亮點、優惠方式，或活動期間可使用的兌換資訊。</p>
@@ -1095,7 +1399,7 @@
                 <span>聯絡：待補</span>
               </div>
             </article>
-            <article class="sponsor-card">
+            <article class="sponsor-card" style="--sponsor-bg: rgba(217, 75, 139, 0.16)">
               <div class="logo-box" aria-label="贊助商 C logo 預留位置">LOGO</div>
               <h3>店家名稱 C</h3>
               <p>適合放更正式的合作單位、品牌或系上支持單位。</p>
@@ -1109,7 +1413,7 @@
         </div>
       </section>
 
-      <section class="wrap" aria-label="更多資訊">
+      <section class="wrap reveal" aria-label="更多資訊">
         <div class="contact-panel">
           <div>
             <span class="section-label" style="color: #ffe2a3">Contact</span>
@@ -1128,5 +1432,27 @@
     <footer>
       2026 中山五系聯合迎新宿營
     </footer>
+    <script>
+      const revealTargets = document.querySelectorAll(".reveal");
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if (prefersReducedMotion) {
+        revealTargets.forEach((target) => target.classList.add("is-visible"));
+      } else {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.16 }
+        );
+
+        revealTargets.forEach((target) => observer.observe(target));
+      }
+    </script>
   </body>
 </html>
