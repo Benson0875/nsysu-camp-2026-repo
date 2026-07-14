@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2026 五系聯合迎新宿營</title>
+    <meta
+      name="description"
+      content="2026 中山醫科、外文、光電、機電、生科五系聯合迎新宿營活動介紹。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f5f5f7;
+        --paper: #ffffff;
+        --ink: #1d1d1f;
+        --muted: #6e6e73;
+        --line: rgba(29, 29, 31, 0.12);
+        --blue: #0071e3;
+        --green: #0a7f70;
+        --pink: #c84d7f;
+        --gold: #b7791f;
+        --shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--bg);
+        font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .wrap {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .nav {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background: rgba(245, 245, 247, 0.78);
+        border-bottom: 1px solid rgba(29, 29, 31, 0.08);
+        backdrop-filter: saturate(180%) blur(22px);
+      }
+
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 52px;
+        font-size: 14px;
+      }
+
+      .brand {
+        font-weight: 900;
+      }
+
+      .links {
+        display: flex;
+        gap: 18px;
+        color: var(--muted);
+      }
+
+      .links a {
+        text-decoration: none;
+      }
+
+      .hero {
+        min-height: calc(100svh - 52px);
+        display: grid;
+        align-items: end;
+        position: relative;
+        overflow: hidden;
+        background:
+          linear-gradient(180deg, rgba(245, 245, 247, 0.06), rgba(245, 245, 247, 0.88)),
+          url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=80")
+            center / cover;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: auto 0 0;
+        height: 32%;
+        background: linear-gradient(180deg, transparent, var(--bg));
+        pointer-events: none;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        padding: 120px 0 82px;
+        color: #fff;
+        text-shadow: 0 2px 26px rgba(0, 0, 0, 0.32);
+      }
+
+      .kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 18px;
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: #fff;
+        box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.2);
+      }
+
+      h1 {
+        max-width: 860px;
+        margin: 0;
+        font-size: 72px;
+        line-height: 1.05;
+        letter-spacing: 0;
+        font-weight: 900;
+      }
+
+      .hero-text {
+        max-width: 700px;
+        margin: 20px 0 0;
+        font-size: 20px;
+        line-height: 1.75;
+        font-weight: 500;
+      }
+
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 28px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 0 16px;
+        border: 1px solid rgba(255, 255, 255, 0.42);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.18);
+        backdrop-filter: blur(16px);
+        font-weight: 700;
+      }
+
+      section {
+        padding: 86px 0;
+      }
+
+      .section-head {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.7fr);
+        gap: 28px;
+        align-items: end;
+        margin-bottom: 28px;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 44px;
+        line-height: 1.16;
+        letter-spacing: 0;
+        font-weight: 900;
+      }
+
+      .lead {
+        margin: 0;
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.8;
+      }
+
+      .department-grid,
+      .activity-grid,
+      .sponsor-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 12px;
+      }
+
+      .department {
+        min-height: 156px;
+        padding: 22px;
+        border-radius: 8px;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
+      }
+
+      .department strong {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+
+      .department span,
+      .activity p,
+      .location p,
+      .sponsor p {
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .intro-band {
+        background: #111113;
+        color: #fff;
+      }
+
+      .intro-band .lead {
+        color: rgba(255, 255, 255, 0.72);
+      }
+
+      .intro-copy {
+        max-width: 860px;
+        font-size: 30px;
+        line-height: 1.55;
+        font-weight: 800;
+      }
+
+      .activity-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .activity {
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 24px;
+        border-radius: 8px;
+        overflow: hidden;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+      }
+
+      .activity .tag {
+        width: fit-content;
+        margin-bottom: 54px;
+        padding: 7px 11px;
+        border-radius: 999px;
+        background: rgba(0, 113, 227, 0.1);
+        color: var(--blue);
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      .activity h3,
+      .location h3,
+      .sponsor h3 {
+        margin: 0 0 8px;
+        font-size: 24px;
+        line-height: 1.25;
+      }
+
+      .timeline {
+        display: grid;
+        gap: 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .day {
+        display: grid;
+        grid-template-columns: 190px 1fr;
+        gap: 28px;
+        padding: 30px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .day-label {
+        position: sticky;
+        top: 72px;
+        align-self: start;
+        font-size: 24px;
+        font-weight: 900;
+      }
+
+      .day-events {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .event {
+        display: grid;
+        grid-template-columns: 92px 1fr;
+        gap: 14px;
+        min-height: 74px;
+        padding: 16px;
+        border-radius: 8px;
+        background: var(--paper);
+        border: 1px solid var(--line);
+      }
+
+      .time {
+        color: var(--blue);
+        font-size: 14px;
+        font-weight: 900;
+      }
+
+      .event strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .event span {
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .location-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+
+      .location {
+        min-height: 260px;
+        padding: 28px;
+        border-radius: 8px;
+        border: 1px solid var(--line);
+        background: var(--paper);
+        box-shadow: var(--shadow);
+      }
+
+      .location .map-label {
+        display: inline-block;
+        margin-top: 28px;
+        padding: 9px 13px;
+        border-radius: 999px;
+        background: #f0f0f3;
+        color: var(--muted);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .sponsor-section {
+        background: #fff;
+      }
+
+      .sponsor-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .sponsor {
+        min-height: 260px;
+        padding: 24px;
+        border-radius: 8px;
+        border: 1px solid var(--line);
+        background: #fbfbfd;
+      }
+
+      .logo-box {
+        width: 96px;
+        height: 96px;
+        display: grid;
+        place-items: center;
+        margin-bottom: 22px;
+        border-radius: 8px;
+        background: #fff;
+        border: 1px dashed rgba(29, 29, 31, 0.24);
+        color: var(--muted);
+        font-weight: 900;
+      }
+
+      .sponsor-info {
+        display: grid;
+        gap: 8px;
+        margin-top: 16px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .contact-panel {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 24px;
+        align-items: center;
+        padding: 38px;
+        border-radius: 8px;
+        background: #111113;
+        color: #fff;
+      }
+
+      .contact-panel p {
+        color: rgba(255, 255, 255, 0.72);
+      }
+
+      .contact-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .contact-item {
+        padding: 16px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      footer {
+        padding: 26px 0 42px;
+        color: var(--muted);
+        text-align: center;
+        font-size: 14px;
+      }
+
+      @media (max-width: 920px) {
+        .links {
+          display: none;
+        }
+
+        .hero {
+          min-height: 92svh;
+        }
+
+        .hero-content {
+          padding: 92px 0 60px;
+        }
+
+        h1 {
+          font-size: 46px;
+        }
+
+        h2 {
+          font-size: 34px;
+        }
+
+        .hero-text,
+        .lead {
+          font-size: 16px;
+        }
+
+        .section-head,
+        .location-grid,
+        .contact-panel {
+          grid-template-columns: 1fr;
+        }
+
+        .department-grid,
+        .activity-grid,
+        .sponsor-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .intro-copy {
+          font-size: 24px;
+        }
+
+        .day {
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+
+        .day-label {
+          position: static;
+        }
+
+        .day-events {
+          grid-template-columns: 1fr;
+        }
+
+        .event {
+          grid-template-columns: 82px 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <div class="brand">2026 五系聯合迎新宿營</div>
+        <nav class="links" aria-label="頁面導覽">
+          <a href="#departments">參與系所</a>
+          <a href="#activities">活動內容</a>
+          <a href="#schedule">三天流程</a>
+          <a href="#location">地點</a>
+          <a href="#sponsors">贊助商</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="活動主視覺">
+        <div class="wrap hero-content">
+          <div class="kicker"><span class="dot"></span>2026.10.09 - 10.11</div>
+          <h1>中山五系聯合迎新宿營</h1>
+          <p class="hero-text">
+            一場為新生準備的三天兩夜旅程。從破冰到晚會，從校園出發到走馬瀨農場，
+            讓不同系的新朋友在活動裡相遇、熟悉，開始大學生活的第一段共同記憶。
+          </p>
+          <div class="hero-meta">
+            <span class="pill">醫科</span>
+            <span class="pill">外文</span>
+            <span class="pill">光電</span>
+            <span class="pill">機電</span>
+            <span class="pill">生科</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="departments" class="wrap">
+        <div class="section-head">
+          <h2>五個系，一起開場。</h2>
+          <p class="lead">
+            這次宿營由醫科、外文、光電、機電、生科共同參與，讓新生在系內交流之外，也能提早建立跨系朋友圈。
+          </p>
+        </div>
+        <div class="department-grid">
+          <article class="department">
+            <strong>醫科</strong>
+            <span>以團隊合作與關懷精神，加入這場迎新旅程。</span>
+          </article>
+          <article class="department">
+            <strong>外文</strong>
+            <span>帶來語言、人文與交流的活力。</span>
+          </article>
+          <article class="department">
+            <strong>光電</strong>
+            <span>用理工人的細膩與創意點亮活動。</span>
+          </article>
+          <article class="department">
+            <strong>機電</strong>
+            <span>把執行力和行動感帶進團隊任務。</span>
+          </article>
+          <article class="department">
+            <strong>生科</strong>
+            <span>以探索精神與自然觀察感加入宿營。</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="intro-band">
+        <div class="wrap">
+          <p class="intro-copy">
+            這不只是行程表，而是一個讓新生降低陌生感、建立歸屬感、看見彼此的活動設計。
+          </p>
+          <p class="lead">
+            企劃核心聚焦在人際連結、分組合作與團隊互動。透過密集但有節奏的活動安排，讓新生在入學初期就有機會認識同儕、學長姐與不同系的夥伴。
+          </p>
+        </div>
+      </section>
+
+      <section id="activities" class="wrap">
+        <div class="section-head">
+          <h2>活動內容</h2>
+          <p class="lead">
+            每一段活動都有不同任務：有些讓大家打開話題，有些建立默契，有些則留下宿營最熱鬧的共同回憶。
+          </p>
+        </div>
+        <div class="activity-grid">
+          <article class="activity">
+            <div class="tag">Day 1</div>
+            <h3>破冰活動</h3>
+            <p>透過輕鬆互動與小隊任務，讓新生先認識隊友與活動氛圍。</p>
+          </article>
+          <article class="activity">
+            <div class="tag">Day 1</div>
+            <h3>夜教</h3>
+            <p>以夜間情境與團隊挑戰創造共同經驗，提升小隊凝聚力。</p>
+          </article>
+          <article class="activity">
+            <div class="tag">Day 2</div>
+            <h3>大地遊戲</h3>
+            <p>讓各小隊在闖關、合作與競賽中快速建立默契。</p>
+          </article>
+          <article class="activity">
+            <div class="tag">Day 2</div>
+            <h3>水大地</h3>
+            <p>加入水上元素與戶外挑戰，讓活動更有夏日感和參與感。</p>
+          </article>
+          <article class="activity">
+            <div class="tag">Day 2</div>
+            <h3>晚會表演</h3>
+            <p>以表演、互動與舞台節目把第二天推向最熱鬧的高潮。</p>
+          </article>
+          <article class="activity">
+            <div class="tag">Day 3</div>
+            <h3>安平老街</h3>
+            <p>在結業後安排自由活動，讓大家用比較放鬆的方式收尾。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="schedule" class="wrap">
+        <div class="section-head">
+          <h2>三天流程</h2>
+          <p class="lead">
+            以時間軸呈現活動節奏，方便新生、幹部與審查者快速確認每天的安排。
+          </p>
+        </div>
+        <div class="timeline">
+          <div class="day">
+            <div class="day-label">10/9</div>
+            <div class="day-events">
+              <div class="event"><div class="time">19:00</div><div><strong>集合</strong><span>完成報到與小隊整隊。</span></div></div>
+              <div class="event"><div class="time">19:00</div><div><strong>破冰</strong><span>開啟小隊互動與活動氛圍。</span></div></div>
+              <div class="event"><div class="time">20:00</div><div><strong>夜教</strong><span>夜間團隊任務與情境活動。</span></div></div>
+              <div class="event"><div class="time">21:30</div><div><strong>宵夜</strong><span>補充體力，也讓小隊自由交流。</span></div></div>
+            </div>
+          </div>
+          <div class="day">
+            <div class="day-label">10/10</div>
+            <div class="day-events">
+              <div class="event"><div class="time">07:30</div><div><strong>集合</strong><span>出發前確認人員與物資。</span></div></div>
+              <div class="event"><div class="time">08:00</div><div><strong>發車</strong><span>前往走馬瀨農場。</span></div></div>
+              <div class="event"><div class="time">10:00</div><div><strong>抵達</strong><span>場地確認與活動準備。</span></div></div>
+              <div class="event"><div class="time">10:00</div><div><strong>大地遊戲</strong><span>闖關、競賽與小隊合作。</span></div></div>
+              <div class="event"><div class="time">13:30</div><div><strong>水大地</strong><span>戶外水上活動與團隊挑戰。</span></div></div>
+              <div class="event"><div class="time">20:00</div><div><strong>晚會表演</strong><span>節目表演與全體互動。</span></div></div>
+            </div>
+          </div>
+          <div class="day">
+            <div class="day-label">10/11</div>
+            <div class="day-events">
+              <div class="event"><div class="time">08:00</div><div><strong>早餐</strong><span>集合、用餐與精神整理。</span></div></div>
+              <div class="event"><div class="time">08:40</div><div><strong>大地遊戲</strong><span>最後一輪小隊任務。</span></div></div>
+              <div class="event"><div class="time">11:40</div><div><strong>結業</strong><span>活動總結與點心時間。</span></div></div>
+              <div class="event"><div class="time">12:40</div><div><strong>安平老街</strong><span>自由活動與小隊交流。</span></div></div>
+              <div class="event"><div class="time">17:00</div><div><strong>回程</strong><span>返程並完成活動收尾。</span></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="location" class="wrap">
+        <div class="section-head">
+          <h2>活動地點</h2>
+          <p class="lead">
+            地點資訊分成集合地與主要活動地，讓參與者可以清楚知道去哪裡集合、去哪裡活動。
+          </p>
+        </div>
+        <div class="location-grid">
+          <article class="location">
+            <h3>集合地｜國立中山大學</h3>
+            <p>活動第一階段於校內集合，進行報到、人員確認、行前提醒與小隊整隊。</p>
+            <span class="map-label">可放校內集合點地圖</span>
+          </article>
+          <article class="location">
+            <h3>主要活動地｜走馬瀨農場</h3>
+            <p>地址：臺南市大內區其子瓦60號。第二天主要活動於走馬瀨農場進行，包含大地遊戲、水大地與晚會安排。</p>
+            <span class="map-label">可嵌入 Google Map</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="sponsors" class="sponsor-section">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>特別感謝</h2>
+            <p class="lead">
+              這裡預留給贊助商 logo、店家資訊、贊助內容與優惠資訊。之後只要替換圖片與文字，就能成為正式公開版。
+            </p>
+          </div>
+          <div class="sponsor-grid">
+            <article class="sponsor">
+              <div class="logo-box">LOGO</div>
+              <h3>店家名稱 A</h3>
+              <p>可放店家簡介，例如餐飲、飲料、文具、活動用品或在地合作店家。</p>
+              <div class="sponsor-info">
+                <span>贊助內容：餐券 / 物資 / 優惠</span>
+                <span>地址：待補</span>
+                <span>社群：待補</span>
+              </div>
+            </article>
+            <article class="sponsor">
+              <div class="logo-box">LOGO</div>
+              <h3>店家名稱 B</h3>
+              <p>可放合作亮點、優惠方式，或活動期間可使用的兌換資訊。</p>
+              <div class="sponsor-info">
+                <span>贊助內容：待補</span>
+                <span>地址：待補</span>
+                <span>聯絡：待補</span>
+              </div>
+            </article>
+            <article class="sponsor">
+              <div class="logo-box">LOGO</div>
+              <h3>店家名稱 C</h3>
+              <p>適合放更正式的合作單位、品牌或系上支持單位。</p>
+              <div class="sponsor-info">
+                <span>贊助內容：待補</span>
+                <span>地址：待補</span>
+                <span>社群：待補</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap">
+        <div class="contact-panel">
+          <div>
+            <h2>更多資訊</h2>
+            <p class="lead">
+              這裡可以放總召、活動窗口、報名表單、Instagram 或完整企劃書連結。
+            </p>
+          </div>
+          <div class="contact-list">
+            <div class="contact-item">總召 / 副召：待補</div>
+            <div class="contact-item">Instagram：待補</div>
+            <div class="contact-item">報名連結：待補</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      2026 中山五系聯合迎新宿營
+    </footer>
+  </body>
+</html>
