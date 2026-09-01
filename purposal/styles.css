@@ -12,13 +12,15 @@ a { color:inherit; } img { display:block; max-width:100%; } h1,h2,h3,p { margin-
 @media (max-width:560px) { h1 { font-size:clamp(2.45rem,13vw,3.7rem); }.proposal-brand b { font-size:.85rem; }.proposal-brand small { font-size:.63rem; }.ask-card { padding:18px; }.ask-card-title { align-items:start; flex-direction:column; gap:0; }.distribution-list li { grid-template-columns:1fr auto; gap:4px 12px; }.distribution-list span { grid-column:1 / -1; }.post-preview-grid { grid-template-columns:1fr; }.post-preview { min-height:150px; }.deliverable-table-wrap { margin-inline:calc((100vw - 100%) / -2); padding-inline:16px; }.overview-photo,.hydration-photo { border-radius:20px; }.primary-request,.decision-summary,.content-preview,.add-on-row,.closing-card { padding:21px; } }
 
 /* Page switching keeps the proposal to four deliberate screens on desktop. */
-.proposal-page { min-height:0; height:auto; padding:clamp(30px,4vw,58px) 0; overflow:visible; }
+.proposal-page { display:block; min-height:0; height:auto; padding:clamp(30px,4vw,58px) 0; overflow:visible; }
 .proposal-page[hidden] { display:none!important; }
 .proposal-page h1>span,.proposal-page h1>em,.proposal-page h2>span { display:block; }
 .proposal-page h1>span { white-space:nowrap; }
 .overview-grid { grid-template-columns:minmax(540px,1.2fr) minmax(300px,.8fr); min-height:0; }
 .hydration-grid { min-height:0; }
+.overview h1 { font-size:clamp(2.65rem,4.8vw,4.6rem); }
 .overview h1 em { white-space:nowrap; }
+.overview .proof-strip { margin-top:28px; }
 .opening { max-width:none; font-size:clamp(1.25rem,2vw,1.65rem); color:var(--ink); font-weight:900; }
 .proposal-brand b { font-size:1.05rem; }
 .proposal-brand small { font-size:.68rem; }
@@ -43,7 +45,7 @@ a { color:inherit; } img { display:block; max-width:100%; } h1,h2,h3,p { margin-
 .content-preview h3 { font-size:clamp(1.65rem,2.8vw,2.4rem); }
 .content-preview h3 span { display:block; }
 .content-preview-copy>p { font-size:.86rem; }
-.resource-link { display:inline-flex; align-items:center; min-height:42px; margin:14px 10px 0 0; padding:0 13px; border:1px solid var(--rose); border-radius:999px; color:var(--rose); font-size:.94rem; font-weight:900; text-decoration:none; transition:background .2s,color .2s; }
+.resource-link { display:inline-flex; align-items:center; justify-content:center; min-height:48px; margin:14px 10px 0 0; padding:0 18px; border:1px solid var(--rose); border-radius:999px; color:var(--rose); font-size:.94rem; font-weight:900; line-height:1; text-align:center; text-decoration:none; transition:background .2s,color .2s; }
 .resource-link:hover { background:var(--rose); color:var(--paper); }
 .instagram-mockup { overflow:hidden; border:1px solid var(--line); border-radius:16px; background:#fff; color:#292126; box-shadow:0 12px 25px rgba(87,62,61,.1); }
 .instagram-mockup header { display:flex; align-items:center; gap:10px; padding:10px 12px; line-height:1.3; }
@@ -54,14 +56,15 @@ a { color:inherit; } img { display:block; max-width:100%; } h1,h2,h3,p { margin-
 .instagram-mockup header button { margin-left:auto; padding:4px; border:0; background:transparent; color:inherit; font-weight:900; cursor:pointer; }
 .instagram-media { position:relative; background:#eee; }
 .instagram-media>img { width:100%; aspect-ratio:1 / 1; object-fit:cover; }
-.ig-arrow { position:absolute; top:50%; transform:translateY(-50%); width:30px; height:30px; border:0; border-radius:50%; background:#fff; color:var(--ink); box-shadow:0 2px 8px rgba(0,0,0,.25); font-size:1.65rem; line-height:1; cursor:pointer; }
+.ig-arrow { position:absolute; top:50%; transform:translateY(-50%); width:34px; height:34px; border:1px solid #e0d9d6; border-radius:50%; background:#fff; color:#211d1f; box-shadow:0 2px 8px rgba(0,0,0,.2); font-size:1.65rem; line-height:1; cursor:pointer; }
 .ig-arrow.previous { left:10px; }.ig-arrow.next { right:10px; }
 .instagram-actions { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; padding:8px 12px 4px; font-size:1.18rem; line-height:1; }
 .instagram-actions>span:last-child { justify-self:end; }
 .ig-dots { display:flex; gap:4px; }.ig-dots button { width:6px; height:6px; padding:0; border:0; border-radius:50%; background:#c6c6c6; cursor:pointer; }.ig-dots button.is-current { background:var(--supau); }
 .instagram-caption { padding:0 12px 12px; font-size:.73rem; line-height:1.45; }.instagram-caption p { display:inline; margin-left:5px; }.instagram-caption small { display:block; margin-top:6px; color:#807679; font-size:.61rem; }
-.hydration .next-link { display:flex; width:max-content; margin-left:auto; }
-.resource-link { justify-content:center; line-height:1.2; }
+.hydration-copy { display:flex; flex-direction:column; align-items:stretch; }
+.hydration .next-link { display:flex; width:max-content; margin-left:auto; align-self:flex-end; }
+.content-preview h3 span:first-child { letter-spacing:.045em; }
 .execution { justify-content:flex-start; }.execution-heading { max-width:none; }.execution-heading h2 { margin-bottom:0; font-size:clamp(2rem,4vw,3.5rem); text-align:left; white-space:nowrap; }.schedule-grid { margin-top:21px; }.schedule-grid article { min-height:205px; padding:20px; }.schedule-grid article.featured { transform:none; border-color:var(--line); background:var(--surface); }.schedule-grid article.featured span { color:var(--rose); }.safety-grid { margin-top:15px; }.safety-grid article { padding:18px 20px; }.safety-grid p { font-size:.84rem; }.closing-card { margin-top:21px; padding:25px; }.closing-card h2 span { display:block; }
 @media (max-width:860px) { .proposal-page { min-height:0; }.overview-grid { grid-template-columns:1fr; }.overview h1 em,.execution-heading h2 { white-space:normal; }.event-facts dd { white-space:normal; }.content-preview { grid-template-columns:1fr; }.deliverable-table { min-width:760px; }.proposal-page h1>span { white-space:normal; } }
 @media (max-width:560px) { .proposal-brand b { font-size:.88rem; }.proposal-brand small { font-size:.58rem; }.nav-toggle { font-size:.72rem; }.proposal-page { padding-top:36px; }.instagram-actions { font-size:1rem; }.resource-link { font-size:.82rem; }.hydration-copy h2 span { white-space:nowrap; } }
