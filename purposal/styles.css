@@ -72,3 +72,14 @@ a { color:inherit; } img { display:block; max-width:100%; } h1,h2,h3,p { margin-
 
 main { flex:1; }
 .proposal-footer { margin-top:auto; }
+
+/* Keep the reduced partnership page balanced after optional decision blocks are removed. */
+.partnership-heading { display:block; }
+.partnership-heading .eyebrow { margin-bottom:8px; }
+.decision-layout { grid-template-columns:minmax(0,760px); }
+.primary-request { max-width:760px; }
+.deliverable-table tbody th a { color:var(--ink); text-decoration-color:var(--rose); text-decoration-thickness:2px; text-underline-offset:4px; }
+.deliverable-table tbody th a:hover { color:var(--rose); }
+.resource-links { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:18px; }
+.resource-links .resource-link { width:100%; margin:0; }
+@media (max-width:560px) { .resource-links { grid-template-columns:1fr; } }
