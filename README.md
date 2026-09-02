@@ -22,3 +22,4 @@
 - [活動介紹](https://benson0875.github.io/nsysu-camp-2026-repo/activities.html)
 - [贊助合作資訊](https://benson0875.github.io/nsysu-camp-2026-repo/sponsors.html)
 - [舒跑贊助合作提案](https://benson0875.github.io/nsysu-camp-2026-repo/purposal/)
+- [Surfshark 贊助合作提案](https://benson0875.github.io/nsysu-camp-2026-repo/surfshark/)
