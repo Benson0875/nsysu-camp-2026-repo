@@ -3,43 +3,27 @@ const navMenu = document.querySelector('.proposal-links');
 const pages = [...document.querySelectorAll('.proposal-page')];
 const pageLinks = [...document.querySelectorAll('.proposal-links a')];
 
-function showPage(id, shouldFocus = false) {
-  const page = document.getElementById(id);
-  if (!page) return;
-  pages.forEach((item) => {
-    const active = item === page;
-    item.hidden = !active;
-    item.classList.toggle('is-active', active);
-  });
-  pageLinks.forEach((link) => link.classList.toggle('active', link.getAttribute('href') === `#${id}`));
-  navMenu?.classList.remove('is-open');
-  navToggle?.setAttribute('aria-expanded', 'false');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  if (shouldFocus) page.focus({ preventScroll: true });
-}
-
-function showPageFromHash(shouldFocus = false) {
-  const id = window.location.hash.replace('#', '');
-  showPage(pages.some((page) => page.id === id) ? id : 'overview', shouldFocus);
-}
+pages.forEach((page) => page.removeAttribute('hidden'));
 
 navToggle?.addEventListener('click', () => {
   const isOpen = navMenu?.classList.toggle('is-open');
   navToggle.setAttribute('aria-expanded', String(Boolean(isOpen)));
 });
 
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener('click', (event) => {
-    const id = link.getAttribute('href')?.slice(1);
-    if (!id || !pages.some((page) => page.id === id)) return;
-    event.preventDefault();
-    history.pushState(null, '', `#${id}`);
-    showPage(id, true);
-  });
-});
+pageLinks.forEach((link) => link.addEventListener('click', () => {
+  navMenu?.classList.remove('is-open');
+  navToggle?.setAttribute('aria-expanded', 'false');
+}));
 
-window.addEventListener('popstate', () => showPageFromHash(true));
-showPageFromHash(false);
+const pageObserver = new IntersectionObserver((entries) => {
+  const visiblePage = entries
+    .filter((entry) => entry.isIntersecting)
+    .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+  if (!visiblePage) return;
+  pageLinks.forEach((link) => link.classList.toggle('active', link.getAttribute('href') === `#${visiblePage.target.id}`));
+}, { rootMargin: '-35% 0px -52% 0px', threshold: [0, .2, .5] });
+
+pages.forEach((page) => pageObserver.observe(page));
 
 const posts = [
   { image: 'assets/instagram/01-before.png', alt: '舒跑合作貼文範例一', caption: '新生營前的準備，除了行李，也別忘了補水。舒跑陪大家一起出發，迎接第一段大學共同回憶。', label: '範例貼文一' },
