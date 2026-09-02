@@ -10,10 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css?v=20260902-2" />
     <style>
-      #proposal .decision-layout { display:block; width:100%; }
+      #proposal .decision-layout { display:block; width:min(1180px,calc(100% - 96px)); margin-inline:auto; }
       #proposal .primary-request { display:block; width:100%; max-width:none; min-height:0; }
       #proposal .primary-request ul { max-width:760px; margin-top:20px; }
-      @media (max-width:700px) { #proposal .primary-request ul { margin-top:18px; } }
+      @media (max-width:700px) { #proposal .decision-layout { width:calc(100% - 32px); } #proposal .primary-request ul { margin-top:18px; } }
     </style>
   </head>
   <body>
