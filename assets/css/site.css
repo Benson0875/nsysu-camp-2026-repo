@@ -42,3 +42,5 @@ img { display:block; max-width:100%; } a { color:inherit; } h1,h2,h3,p { margin-
 .brand-moment-points { display:flex;flex-wrap:wrap;gap:9px;margin-top:25px; }
 .brand-moment-points span { padding:8px 11px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font-size:.83rem;font-weight:900; }
 @media (max-width:800px) { .brand-moment { padding:58px 0; }.brand-moment-grid { grid-template-columns:1fr;gap:25px; }.brand-moment-photo { border-radius:20px; }.brand-moment-copy h2 { font-size:2.1rem; } }
+
+.nav-tools { align-items:center;gap:6px; }.language-toggle { min-height:42px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:999px;padding:0 12px;background:transparent;color:var(--text);font:800 .79rem inherit;letter-spacing:.05em;cursor:pointer;transition:background .2s,color .2s,transform .2s; }.language-toggle:hover { transform:translateY(-1px);background:var(--ink);color:var(--paper); }
