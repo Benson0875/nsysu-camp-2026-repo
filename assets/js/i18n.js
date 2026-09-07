@@ -33,11 +33,11 @@ function translatePage() {
 
 if (currentLanguage === 'en') translatePage();
 
-const languageTools = document.querySelector('.nav-tools');
-if (languageTools) {
+const navigationLinks = document.querySelector('.nav-links');
+if (navigationLinks) {
   const toggle = document.createElement('button');
   toggle.type = 'button'; toggle.className = 'language-toggle'; toggle.textContent = currentLanguage === 'en' ? '中文' : 'EN';
   toggle.setAttribute('aria-label', currentLanguage === 'en' ? '切換為繁體中文' : 'Switch to English');
   toggle.addEventListener('click', () => { try { localStorage.setItem(languageStorageKey, currentLanguage === 'en' ? 'zh-Hant' : 'en'); } catch {} window.location.reload(); });
-  languageTools.prepend(toggle);
+  navigationLinks.after(toggle);
 }
