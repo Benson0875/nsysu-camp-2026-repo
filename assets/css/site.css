@@ -44,3 +44,14 @@ img { display:block; max-width:100%; } a { color:inherit; } h1,h2,h3,p { margin-
 @media (max-width:800px) { .brand-moment { padding:58px 0; }.brand-moment-grid { grid-template-columns:1fr;gap:25px; }.brand-moment-photo { border-radius:20px; }.brand-moment-copy h2 { font-size:2.1rem; } }
 
 .nav-tools { align-items:center;gap:6px; }.language-toggle { min-height:42px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:999px;padding:0 12px;background:transparent;color:var(--text);font:800 .79rem inherit;letter-spacing:.05em;cursor:pointer;transition:background .2s,color .2s,transform .2s; }.language-toggle:hover { transform:translateY(-1px);background:var(--ink);color:var(--paper); }
+
+/* Chinese headings are deliberately kept as two compact lines. English needs
+   to wrap within its column instead of extending beneath the adjacent image. */
+html[lang="en"] .hero-title,
+html[lang="en"] .page-title { font-size:clamp(2.1rem,3.55vw,4rem);line-height:1.12;letter-spacing:-.045em;text-wrap:balance; }
+html[lang="en"] .hero-copy .hero-title span,
+html[lang="en"] .page-title span { width:auto;white-space:normal; }
+html[lang="en"] .hero-title span + span,
+html[lang="en"] .page-title span + span { margin-top:.08em; }
+html[lang="en"] .hero-actions .button { padding-inline:clamp(15px,1.5vw,22px);font-size:clamp(.88rem,1.15vw,1rem); }
+@media (max-width:800px) { html[lang="en"] .hero-title,html[lang="en"] .page-title { font-size:clamp(2rem,8.8vw,2.9rem);line-height:1.13; } }
