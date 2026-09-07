@@ -33,6 +33,10 @@ function translatePage() {
 
 if (currentLanguage === 'en') translatePage();
 
+// A visitor may still have the pre-positioning script cached. Remove its button
+// before adding the current control next to the navigation links.
+document.querySelectorAll('.nav-tools .language-toggle, .nav > .language-toggle').forEach((button) => button.remove());
+
 const navigationLinks = document.querySelector('.nav-links');
 if (navigationLinks) {
   const toggle = document.createElement('button');
