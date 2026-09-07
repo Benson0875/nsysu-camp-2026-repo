@@ -86,3 +86,10 @@ main { flex:1; }
 .resource-links .resource-link { width:100%; margin:0; }
 @media (max-width:700px) { .primary-request ul { margin-top:18px; }.primary-request li { padding:9px 0; } }
 @media (max-width:560px) { .resource-links { grid-template-columns:1fr; } }
+
+/* Separate the small invitation label from the main quantity so the desktop
+   proposal reads as one clean headline instead of competing columns. */
+.ask-card-title { display:block; }
+.ask-card-title span { display:block;margin-bottom:5px; }
+.ask-card-title strong { display:block;white-space:nowrap;font-size:clamp(1.55rem,3vw,2.35rem);line-height:1.15; }
+@media (max-width:700px) { .ask-card-title strong { white-space:normal; } }
