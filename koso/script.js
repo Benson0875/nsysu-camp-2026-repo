@@ -27,6 +27,4 @@ function renderPost(index) {
   dots.forEach((dot, dotIndex) => dot.classList.toggle('is-current', dotIndex === currentPost));
 }
 
-document.querySelector('.ig-arrow.previous')?.addEventListener('click', () => renderPost(currentPost - 1));
-document.querySelector('.ig-arrow.next')?.addEventListener('click', () => renderPost(currentPost + 1));
-dots.forEach((dot, index) => dot.addEventListener('click', () => renderPost(index)));
+window.kosoShowPost = (value, absolute = false) => renderPost(absolute ? value : currentPost + value);
