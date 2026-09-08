@@ -24,4 +24,6 @@
 - [舒跑贊助合作提案](https://benson0875.github.io/nsysu-camp-2026-repo/purposal/)
 - [Surfshark 贊助合作提案](https://benson0875.github.io/nsysu-camp-2026-repo/surfshark/)
 - [KOSO 贊助合作提案](https://benson0875.github.io/nsysu-camp-2026-repo/koso/)
+- [KOSO 活動網站合作露出模擬](https://benson0875.github.io/nsysu-camp-2026-repo/koso/activity-mockup.html)
 - [APEXX 贊助合作提案](https://benson0875.github.io/nsysu-camp-2026-repo/apexx/)
+- [APEXX 活動網站合作露出模擬](https://benson0875.github.io/nsysu-camp-2026-repo/apexx/activity-mockup.html)

@@ -28,6 +28,9 @@ img { display:block; max-width:100%; } a { color:inherit; } h1,h2,h3,p { margin-
 .sponsor-ribbon-card:hover,.sponsor-ribbon-card:focus-visible { transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow);outline:none; }
 .sponsor-ribbon-card--supau-campaign { width:360px;min-width:360px;height:auto;min-height:0;aspect-ratio:1328 / 780;padding:0;overflow:hidden;background:#0da9df; }
 .sponsor-ribbon-card--supau-campaign img { width:100%;height:100%;max-width:none;object-fit:cover;object-position:center; }
+.sponsor-ribbon-card--brand-mockup { background:#090909;border-color:#2c2c2c; }
+.sponsor-ribbon-card--brand-mockup img { width:104px;height:62px;flex:0 0 auto;object-fit:contain; }
+.sponsor-ribbon-card--brand-mockup span { color:#fff; }
 .sponsor-logo-card--supau { gap:0;padding:15px;text-decoration:none;cursor:pointer;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
 .sponsor-logo-card--supau img { width:100%;height:84px;object-fit:contain; }
 .sponsor-logo-card--supau strong { margin-top:6px; }
