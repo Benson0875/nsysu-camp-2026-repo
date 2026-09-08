@@ -6,4 +6,5 @@
 .koso-proposal .primary-request > p { font-size:1.12rem; }
 .koso-proposal .primary-request .request-number strong { font-size:clamp(3.3rem,6vw,5.1rem); }
 .koso-proposal .closing-card h2 { letter-spacing:.06em; }
+.koso-proposal .proposal-brand img { padding:0; background:transparent; object-fit:cover; }
 @media (max-width:860px) { .visual-grid { grid-template-columns:1fr; }.site-preview img { min-height:0; }.ig-card { min-height:360px; }.motor-proposal .decision-layout { width:calc(100% - 32px); } }
