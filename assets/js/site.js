@@ -25,6 +25,15 @@ if (sponsorProfiles[sponsorPreview]) {
     card.setAttribute('aria-label', `前往 ${sponsor.name} 官方網站，另開新分頁`);
     card.innerHTML = `<img src="${sponsor.logo}" alt="${sponsor.name} 標誌" /><span>${sponsor.label}</span>`;
   });
+
+  document.querySelectorAll('.sponsor-logo-card--koso, .sponsor-logo-card--apexx').forEach((card) => {
+    card.className = `sponsor-logo-card sponsor-logo-card--${sponsorPreview}`;
+    card.href = sponsor.url;
+    card.target = '_blank';
+    card.rel = 'noopener noreferrer';
+    card.setAttribute('aria-label', `前往 ${sponsor.name} 官方網站，另開新分頁`);
+    card.innerHTML = `<img src="${sponsor.logo}" alt="${sponsor.name} 官方商標" /><strong>${sponsor.name}</strong><span>${sponsor.label.split('｜')[1]}</span>`;
+  });
 }
 
 window.addEventListener('scroll', () => header?.classList.toggle('is-scrolled', window.scrollY > 12), { passive: true });
