@@ -31,18 +31,18 @@ img { display:block; max-width:100%; } a { color:inherit; } h1,h2,h3,p { margin-
 .sponsor-ribbon-card--brand-mockup { background:#090909;border-color:#2c2c2c; }
 .sponsor-ribbon-card--brand-mockup img { width:104px;height:62px;flex:0 0 auto;object-fit:contain; }
 .sponsor-ribbon-card--brand-mockup span { color:#fff; }
-.sponsor-logo-card--supau,.sponsor-logo-card--koso { gap:0;padding:15px;text-decoration:none;cursor:pointer;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
-.sponsor-logo-card--supau img,.sponsor-logo-card--koso img { width:100%;height:84px;object-fit:contain; }
-.sponsor-logo-card--supau strong,.sponsor-logo-card--koso strong { margin-top:6px; }
-.sponsor-logo-card--supau:hover,.sponsor-logo-card--supau:focus-visible,.sponsor-logo-card--koso:hover,.sponsor-logo-card--koso:focus-visible { transform:translateY(-4px);border-color:var(--accent);box-shadow:var(--shadow);outline:none; }
+.sponsor-logo-card--supau,.sponsor-logo-card--koso,.sponsor-logo-card--apexx { gap:0;padding:15px;text-decoration:none;cursor:pointer;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
+.sponsor-logo-card--supau img,.sponsor-logo-card--koso img,.sponsor-logo-card--apexx img { width:100%;height:84px;object-fit:contain; }
+.sponsor-logo-card--supau strong,.sponsor-logo-card--koso strong,.sponsor-logo-card--apexx strong { margin-top:6px; }
+.sponsor-logo-card--supau:hover,.sponsor-logo-card--supau:focus-visible,.sponsor-logo-card--koso:hover,.sponsor-logo-card--koso:focus-visible,.sponsor-logo-card--apexx:hover,.sponsor-logo-card--apexx:focus-visible { transform:translateY(-4px);border-color:var(--accent);box-shadow:var(--shadow);outline:none; }
 @media (max-width:800px) { .sponsor-track > :nth-child(n+6) { display:none; }.sponsor-track .sponsor-ribbon-card { min-width:min(78vw,290px); }.sponsor-track .sponsor-ribbon-card--supau-campaign { width:min(78vw,290px); } }
 
 /* Keep current partnership proposals visible at the start of the home row. */
 .sponsor-marquee { overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;touch-action:pan-x; }
 .sponsor-marquee::-webkit-scrollbar { display:none; }
 .sponsor-track { animation:none; }
-.sponsor-logo-card--supau,.sponsor-logo-card--koso { min-height:300px;padding:20px; }
-.sponsor-logo-card--supau img,.sponsor-logo-card--koso img { width:140px;height:140px;flex:0 0 140px;object-fit:contain; }
+.sponsor-logo-card--supau,.sponsor-logo-card--koso,.sponsor-logo-card--apexx { min-height:300px;padding:20px; }
+.sponsor-logo-card--supau img,.sponsor-logo-card--koso img,.sponsor-logo-card--apexx img { width:140px;height:140px;flex:0 0 140px;object-fit:contain; }
 
 .brand-moment { padding:76px 0;background:var(--paper); }
 .brand-moment-grid { display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);align-items:center;gap:clamp(30px,5vw,76px); }
