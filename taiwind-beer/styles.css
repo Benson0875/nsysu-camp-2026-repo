@@ -4,3 +4,12 @@
 @media (max-width:860px) { .visual-grid { grid-template-columns:1fr; }.site-preview img { min-height:0; }.ig-card { min-height:360px; }.motor-proposal .decision-layout { width:calc(100% - 32px); } }
 .alcohol-warning{position:sticky;bottom:0;z-index:20;padding:16px 24px;background:#171717;color:#fff;text-align:center;font-weight:900;letter-spacing:.08em;font-size:clamp(.78rem,1.5vw,1rem)}
 .alcohol-warning{position:sticky;bottom:0;z-index:20;padding:16px 24px;background:#171717;color:#fff;text-align:center;font-weight:900;letter-spacing:.08em;font-size:clamp(.78rem,1.5vw,1rem)}
+
+/* Keep the Taiwind Beer request concise and inside its card. */
+.taiwind-beer-proposal .ask-card { max-width: 43rem; }
+.taiwind-beer-proposal .ask-card-title { gap: .55rem; }
+.taiwind-beer-proposal .ask-card-title strong { font-size: clamp(2rem, 3.6vw, 3rem); line-height: 1.2; letter-spacing: .025em; overflow-wrap: normal; word-break: keep-all; }
+.taiwind-beer-proposal .ask-product-detail { display: block; font-size: clamp(1.08rem, 1.8vw, 1.35rem); line-height: 1.5; word-break: keep-all; }
+.taiwind-beer-proposal .blank-product b { line-height: 1.75; word-break: keep-all; }
+.taiwind-beer-proposal .request-number strong { display: block; line-height: 1.42; letter-spacing: .04em; word-break: keep-all; }
+.taiwind-beer-proposal .request-number strong span { display: inline-block; margin-top: .18em; }
