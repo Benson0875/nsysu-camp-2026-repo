@@ -12,4 +12,4 @@
 .taiwind-beer-proposal .ask-product-detail { display: block; font-size: clamp(1.08rem, 1.8vw, 1.35rem); line-height: 1.5; word-break: keep-all; }
 .taiwind-beer-proposal .blank-product b { line-height: 1.75; word-break: keep-all; }
 .taiwind-beer-proposal .request-number strong { display: block; line-height: 1.42; letter-spacing: .04em; word-break: keep-all; }
-.taiwind-beer-proposal .request-number strong span { display: inline-block; margin-top: .18em; }
+.taiwind-beer-proposal .request-number strong span { display: inline-block; margin-top: .18em; font-size: clamp(3rem, 6vw, 5.2rem); line-height: 1; }
