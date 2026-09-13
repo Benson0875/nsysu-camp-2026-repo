@@ -19,3 +19,4 @@ const postDate = document.querySelector('#instagram-date');
 const dots = [...document.querySelectorAll('.ig-dots button')];
 function renderPost(index) { currentPost = (index + posts.length) % posts.length; const post = posts[currentPost]; if (postImage) { postImage.src = post.image; postImage.alt = post.alt; } if (postCaption) postCaption.textContent = post.caption; if (postDate) postDate.textContent = post.label; dots.forEach((dot, dotIndex) => dot.classList.toggle('is-current', dotIndex === currentPost)); }
 window.weDrinkWaterShowPost = (value, absolute = false) => renderPost(absolute ? value : currentPost + value);
+renderPost(0);
