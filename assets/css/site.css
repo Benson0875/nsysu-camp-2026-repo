@@ -26,7 +26,7 @@ img { display:block; max-width:100%; } a { color:inherit; } h1,h2,h3,p { margin-
 .sponsor-ribbon-card img { width:72px;height:72px;flex:0 0 auto;object-fit:contain;border-radius:10px; }
 .sponsor-ribbon-card span { min-width:0;padding:0;border:0;background:transparent;color:var(--ink);font-size:.78rem;line-height:1.45;text-align:left; }
 .sponsor-ribbon-card:hover,.sponsor-ribbon-card:focus-visible { transform:translateY(-2px);border-color:var(--accent);box-shadow:var(--shadow);outline:none; }
-.sponsor-ribbon-card--supau-campaign { width:360px;min-width:360px;height:auto;min-height:0;aspect-ratio:1328 / 780;padding:0;overflow:hidden;background:#0da9df; }
+.sponsor-ribbon-card--supau-campaign { width:360px;min-width:360px;height:132px;min-height:132px;padding:0;overflow:hidden;background:#0da9df; }
 .sponsor-ribbon-card--supau-campaign img { width:100%;height:100%;max-width:none;object-fit:cover;object-position:center; }
 .sponsor-ribbon-card--brand-mockup { background:#090909;border-color:#2c2c2c; }
 .sponsor-ribbon-card--brand-mockup img { width:104px;height:62px;flex:0 0 auto;object-fit:contain; }
@@ -42,9 +42,10 @@ img { display:block; max-width:100%; } a { color:inherit; } h1,h2,h3,p { margin-
 /* Keep current partnership proposals visible at the start of the home row. */
 .sponsor-marquee { overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;touch-action:pan-x; }
 .sponsor-marquee::-webkit-scrollbar { display:none; }
-.sponsor-track { animation:none; }
+.sponsor-track { animation:marquee 27s linear infinite; }
 .sponsor-logo-card--supau,.sponsor-logo-card--koso,.sponsor-logo-card--apexx { min-height:300px;padding:20px; }
 .sponsor-logo-card--supau img,.sponsor-logo-card--koso img,.sponsor-logo-card--apexx img { width:140px;height:140px;flex:0 0 140px;object-fit:contain; }
+.sponsor-logo-card--supau img { width:100%;object-fit:cover; }
 .sponsor-logo-card--dark-logo { gap:0;min-height:300px;padding:20px;background:#050505;border-color:#262626;color:#fff;text-decoration:none;cursor:pointer;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
 .sponsor-logo-card--dark-logo img { width:100%;height:140px;flex:0 0 140px;object-fit:contain; }
 .sponsor-logo-card--dark-logo strong { margin-top:6px;color:#fff; }
