@@ -4,3 +4,8 @@
 @media (max-width:860px) { .visual-grid { grid-template-columns:1fr; }.site-preview img { min-height:0; }.ig-card { min-height:360px; }.motor-proposal .decision-layout { width:calc(100% - 32px); } }
 .alcohol-warning{position:sticky;bottom:0;z-index:20;padding:16px 24px;background:#171717;color:#fff;text-align:center;font-weight:900;letter-spacing:.08em;font-size:clamp(.78rem,1.5vw,1rem)}
 .alcohol-warning{position:sticky;bottom:0;z-index:20;padding:16px 24px;background:#171717;color:#fff;text-align:center;font-weight:900;letter-spacing:.08em;font-size:clamp(.78rem,1.5vw,1rem)}
+
+/* brand-site-quality-guard: readable copy at every viewport */
+.proposal-title,.collab-title,.ask-card-title strong,.request-number{word-break:keep-all;overflow-wrap:normal;max-inline-size:100%}.ask-card-title strong,.request-number{line-height:1.24}.ask-product-detail,.blank-product b,.instagram-caption p{line-height:1.65;word-break:keep-all}.deliverable-table td,.deliverable-table th{overflow-wrap:anywhere}.resource-link,.button{white-space:normal}.instagram-caption{min-width:0}
+
+.tsais-brewing-proposal .ask-card-title{gap:.55rem}.ask-card-title strong{font-size:clamp(1.8rem,3.35vw,2.8rem);line-height:1.22}.ask-product-detail{display:block;font-size:clamp(1rem,1.7vw,1.25rem);font-weight:900;line-height:1.55;word-break:keep-all}
