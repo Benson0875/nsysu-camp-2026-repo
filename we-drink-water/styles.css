@@ -14,3 +14,6 @@
 .we-drink-water-proposal .request-number strong { display: block; line-height: 1.36; letter-spacing: .025em; word-break: keep-all; }
 .we-drink-water-proposal .request-number strong span { display: inline-block; margin-top: .18em; font-size: clamp(2.7rem, 5.2vw, 4.5rem); line-height: 1; }
 .we-drink-water-proposal .request-detail { margin: .55rem 0 0; color: rgba(255,255,255,.9); font-size: clamp(1rem, 1.55vw, 1.18rem); font-weight: 900; letter-spacing: .03em; word-break: keep-all; }
+
+/* brand-site-quality-guard: readable copy at every viewport */
+.proposal-title,.collab-title,.ask-card-title strong,.request-number{word-break:keep-all;overflow-wrap:normal;max-inline-size:100%}.ask-card-title strong,.request-number{line-height:1.24}.ask-product-detail,.blank-product b,.instagram-caption p{line-height:1.65;word-break:keep-all}.deliverable-table td,.deliverable-table th{overflow-wrap:anywhere}.resource-link,.button{white-space:normal}.instagram-caption{min-width:0}
