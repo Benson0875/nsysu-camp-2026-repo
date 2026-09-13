@@ -31,6 +31,8 @@
 - [台風造酒 Taiwind Beer 活動網站合作露出模擬](https://benson0875.github.io/nsysu-camp-2026-repo/taiwind-beer/activity-mockup.html)
 - [沃隼釀造 WE DRINK WATER 贊助合作提案](https://benson0875.github.io/nsysu-camp-2026-repo/we-drink-water/)
 - [沃隼釀造 WE DRINK WATER 活動網站合作露出模擬](https://benson0875.github.io/nsysu-camp-2026-repo/we-drink-water/activity-mockup.html)
+- [沃隼釀造 WE DRINK WATER 四頁模擬網站首頁](https://benson0875.github.io/nsysu-camp-2026-repo/we-drink-water/activity-mockup.html)
+- [沃隼釀造 WE DRINK WATER 官方 Instagram](https://www.instagram.com/wedrinkwater_tw/)
 - [啤酒頭釀造 Taiwan Head Brewers 贊助合作提案](https://benson0875.github.io/nsysu-camp-2026-repo/taiwan-head-brewers/)
 - [啤酒頭釀造 Taiwan Head Brewers 活動網站合作露出模擬](https://benson0875.github.io/nsysu-camp-2026-repo/taiwan-head-brewers/activity-mockup.html)
 - [蔡氏釀酒 Tsai's Actual Brewing 贊助合作提案](https://benson0875.github.io/nsysu-camp-2026-repo/tsais-brewing/)
