@@ -4,3 +4,7 @@
 
 /* brand-site-quality-guard: readable copy at every viewport */
 .proposal-title,.collab-title,.ask-card-title strong,.request-number{word-break:keep-all;overflow-wrap:normal;max-inline-size:100%}.ask-card-title strong,.request-number{line-height:1.24}.ask-product-detail,.blank-product b,.instagram-caption p{line-height:1.65;word-break:keep-all}.deliverable-table td,.deliverable-table th{overflow-wrap:anywhere}.resource-link,.button{white-space:normal}.instagram-caption{min-width:0}
+
+/* APEXX-matched dual resource buttons. */
+.resource-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}.resource-links .resource-link{display:inline-grid;width:100%;height:52px;place-items:center;margin:0;padding:0 18px;border:1px solid var(--rose);border-radius:999px;color:var(--rose);font-size:.94rem;font-weight:900;line-height:1;text-align:center;text-decoration:none;transition:background .2s,color .2s}.resource-links .resource-link:hover{background:var(--rose);color:var(--paper)}(max-width:560px){.resource-links{grid-template-columns:1fr}.resource-links .resource-link{font-size:.82rem}}
+.brand-mark{display:block;width:min(220px,62vw);max-height:76px;object-fit:contain;object-position:left center;margin:18px 0 12px;padding:10px 14px;background:#fff;border:1px solid rgba(31,29,27,.14);border-radius:12px}
