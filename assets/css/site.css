@@ -42,9 +42,8 @@ img { display:block; max-width:100%; } a { color:inherit; } h1,h2,h3,p { margin-
 /* Keep current partnership proposals visible at the start of the home row. */
 .sponsor-marquee { overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;touch-action:pan-x; }
 .sponsor-marquee::-webkit-scrollbar { display:none; }
-.sponsor-track { animation:marquee 27s linear infinite; }
-@media (max-width:800px) { .sponsor-track { animation:none; } }
-@media (hover:none) and (pointer:coarse) { .sponsor-track { animation:none!important;transform:none!important; } }
+.sponsor-track { animation:none!important;transform:none!important; }
+.sponsor-track > :nth-child(n+4) { display:none; }
 .sponsor-logo-card--supau,.sponsor-logo-card--koso,.sponsor-logo-card--apexx { min-height:300px;padding:20px; }
 .sponsor-logo-card--supau img,.sponsor-logo-card--koso img,.sponsor-logo-card--apexx img { width:140px;height:140px;flex:0 0 140px;object-fit:contain; }
 .sponsor-logo-card--supau { background:linear-gradient(145deg,#f8fdff,#e9f8ff); }
