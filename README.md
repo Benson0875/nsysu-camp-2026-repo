@@ -68,4 +68,6 @@
 - Bone 蹦克｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/bone/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/bone/activity-mockup.html)｜[官方 Instagram](https://www.instagram.com/bone_taiwan/)
 - DoGa 香酥脆椒｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/doga-chili/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/doga-chili/activity-mockup.html)｜[官方 Instagram](https://www.instagram.com/dogachili/)
 
+- Komax 台灣｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/komax/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/komax/activity-mockup.html)｜[官方網站](https://www.komax.com.tw/)
+
 <!-- sponsor-proposals-end -->
