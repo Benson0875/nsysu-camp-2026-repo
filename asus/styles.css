@@ -11,3 +11,11 @@
 .asus-proposal .blank-product b { line-height: 1.75; word-break: keep-all; }
 .asus-proposal .request-number strong { display: block; line-height: 1.42; letter-spacing: .04em; word-break: keep-all; }
 .asus-proposal .request-number strong span { display: inline-block; margin-top: .18em; font-size: clamp(3rem, 6vw, 5.2rem); line-height: 1; }
+
+/* Keep ASUS proposal headlines deliberate and readable at every viewport. */
+.asus-proposal .opening{max-width:760px;font-size:clamp(1.1rem,1.6vw,1.3rem)}.asus-proposal .opening span{display:block}
+.asus-proposal .collab-title{font-size:clamp(2rem,2.6vw,2.25rem)}.asus-proposal .collab-title span{display:block;white-space:nowrap}
+.asus-proposal .ask-card{max-width:none}.asus-proposal .ask-card-title strong{font-size:clamp(1.65rem,2.25vw,2.3rem);white-space:nowrap}
+.asus-proposal .content-preview h3{font-size:clamp(1.35rem,3.2vw,2.4rem);letter-spacing:.01em;white-space:nowrap}.asus-proposal .content-preview h3 span{display:inline}
+.asus-proposal .closing-card h2{letter-spacing:.06em}.asus-proposal .closing-card h2 span{letter-spacing:.06em}
+@media (max-width:700px){.asus-proposal .ask-card-title strong,.asus-proposal .content-preview h3,.asus-proposal .collab-title span{white-space:normal}}
