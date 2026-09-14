@@ -41,6 +41,32 @@
 - [蔡氏釀酒 Tsai's Actual Brewing 官方 Instagram](https://www.instagram.com/tsais.actual.brewing/)
 <!-- sponsor-proposals-start -->
 
+### 2026 校園生活夥伴提案
+
+- Elevon 準好拔｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/elevon/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/elevon/activity-mockup.html)｜[官方網站](https://www.elevon.com.tw)
+- 淨毒五郎｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/chef-clean/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/chef-clean/activity-mockup.html)｜[官方網站](https://www.chef-clean.com)
+- 仁舟淨塑｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/renzhou/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/renzhou/activity-mockup.html)｜[官方網站](https://www.renzhou.com.tw)
+- 亞果元素｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/adam-elements/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/adam-elements/activity-mockup.html)｜[官方網站](https://www.adamelements.com)
+- 厝內｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/tzulai/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/tzulai/activity-mockup.html)｜[官方網站](https://www.tzulai.com)
+- bitplay｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/bitplay/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/bitplay/activity-mockup.html)｜[官方網站](https://www.bitplayinc.com)
+- 齒妍堂｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/lab52/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/lab52/activity-mockup.html)｜[官方網站](https://www.lab52.com.tw)
+- Unipapa｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/unipapa/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/unipapa/activity-mockup.html)｜[官方網站](https://www.unipapa.com)
+- 磊泰｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/leatai/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/leatai/activity-mockup.html)｜[官方網站](https://www.leatai.com)
+- LoveFu｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/lovefu/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/lovefu/activity-mockup.html)｜[官方網站](https://www.lovefu.tw)
+- WOKY 沃廚｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/woky/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/woky/activity-mockup.html)｜[官方網站](https://www.woky.com.tw)
+- 發現茶｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/teascovery/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/teascovery/activity-mockup.html)｜[官方網站](https://www.teascovery.com)
+- 巧研｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/qyen/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/qyen/activity-mockup.html)｜[官方網站](https://www.qyen.com.tw)
+- 大振豐洋傘｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/tcf/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/tcf/activity-mockup.html)｜[官方網站](https://www.tcf.com.tw)
+- BHK's｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/bhks/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/bhks/activity-mockup.html)｜[官方網站](https://www.bhks.com.tw)
+- 茶籽堂｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/chatzutang/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/chatzutang/activity-mockup.html)｜[官方網站](https://www.chatzutang.com)
+- deya｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/deya/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/deya/activity-mockup.html)｜[官方網站](https://www.deya.tw)
+- 輕鬆美膚｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/ezskin/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/ezskin/activity-mockup.html)｜[官方網站](https://www.ezskin.com.tw)
+- Layoo 來喲｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/layoo/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/layoo/activity-mockup.html)｜[官方網站](https://www.layoo.com.tw)
+- 緩緩｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/huan-w/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/huan-w/activity-mockup.html)｜[官方網站](https://www.huan-w.com)
+- ReTissue｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/retissue/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/retissue/activity-mockup.html)｜[官方網站](https://www.retissue.tw)
+- 淨極勁｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/jing-ji-jing/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/jing-ji-jing/activity-mockup.html)｜[官方網站](https://www.jingjijing.com)
+- 慢享 Slow｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/slow-wipes/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/slow-wipes/activity-mockup.html)｜[官方網站](https://www.slow-tw.com)
+
 ## 贊助企劃書
 
 - 愛康 ICON｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/icon/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/icon/activity-mockup.html)｜[官方網站](https://www.icon99.com.tw/)
