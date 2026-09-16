@@ -5,4 +5,3 @@
 @media (max-width:860px) { .visual-grid { grid-template-columns:1fr; }.site-preview img { min-height:0; }.ig-card { min-height:360px; }.motor-proposal .decision-layout { width:calc(100% - 32px); } }
 
 /* Keep each supplied logo legible in the shared APEXX proposal layout. */
-.brand-mark{display:block;width:min(220px,62vw);max-height:76px;object-fit:contain;object-position:left center;margin:18px 0 12px;padding:10px 14px;background:#fff;border:1px solid rgba(31,29,27,.14);border-radius:12px}
