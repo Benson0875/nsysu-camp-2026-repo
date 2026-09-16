@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480"><rect width="960" height="480" rx="44" fill="#ffffff"/><text x="86" y="230" fill="#171717" font-family="Arial, sans-serif" font-size="72" font-weight="800">DoGa 香酥脆椒</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+  <title id="title">DoGa 香酥脆椒</title><desc id="desc">DoGa Crispy Chili wordmark</desc>
+  <rect width="960" height="480" rx="44" fill="#fff8eb"/>
+  <path d="M159 92c35-31 79-30 108-5-24 4-45 18-57 38l-17 31c-21-7-39-23-52-45 8-6 13-12 18-19Z" fill="#4d982e"/>
+  <path d="M138 157c54-20 111 6 130 59 22 61-10 140-75 182-49 31-109 9-126-47-19-64 11-122 71-144Z" fill="#d92727"/>
+  <path d="M117 201c40-29 89-29 116-7-42 2-80 30-98 70-10-21-16-42-18-63Z" fill="#f35b39" opacity=".72"/>
+  <circle cx="150" cy="226" r="11" fill="#fff"/><circle cx="207" cy="226" r="11" fill="#fff"/><circle cx="153" cy="228" r="5" fill="#2b2020"/><circle cx="204" cy="228" r="5" fill="#2b2020"/>
+  <path d="M145 273c21 21 50 21 71 0" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="10"/>
+  <text x="316" y="234" fill="#2b2020" font-family="Arial, Helvetica, sans-serif" font-size="154" font-weight="900" letter-spacing="-8">DoGa</text>
+  <text x="324" y="308" fill="#be2529" font-family="Arial, Helvetica, sans-serif" font-size="39" font-weight="800" letter-spacing="11">CRISPY CHILI</text>
+</svg>
