@@ -1,1 +1,24 @@
-const posts=[{"image":"assets/instagram/01-before.svg","caption":"出發前，先把 30W 快充頭或快充線 放進我們對迎新的想像裡。","label":"貼文方向一｜活動前"},{"image":"assets/instagram/02-during.svg","caption":"Solide 索力得 的合作露出，會依現場節奏與品牌確認內容自然呈現。","label":"貼文方向二｜活動中"},{"image":"assets/instagram/03-after.svg","caption":"三天兩夜結束後，謝謝 Solide 索力得 成為新生旅程裡的一位夥伴。","label":"貼文方向三｜活動後"}];let current=0;const image=document.querySelector('#instagram-image'),caption=document.querySelector('#instagram-caption'),date=document.querySelector('#instagram-date'),dots=[...document.querySelectorAll('.ig-dots button')];function render(index){current=(index+posts.length)%posts.length;const p=posts[current];if(image)image.src=p.image;if(caption)caption.textContent=p.caption;if(date)date.textContent=p.label;dots.forEach((dot,i)=>dot.classList.toggle('is-current',i===current))}document.querySelectorAll('[data-direction]').forEach(button=>button.addEventListener('click',()=>render(current+Number(button.dataset.direction))));dots.forEach((dot,i)=>dot.addEventListener('click',()=>render(i)));
+const posts = [
+  { image: "assets/instagram/01-before.svg", label: "貼文方向一｜活動前", caption: "開學前，先把最常用的行動電力準備好。若合作成案，SOLiDE Gemini 雙子座 5000mAh Type-C 便攜式充電行動電源將作為晚會抽獎品，陪新生為宿舍與課堂生活做好準備。" },
+  { image: "assets/instagram/02-during.svg", label: "貼文方向二｜活動中", caption: "活動現場的抽獎與品牌介紹，將依 SOLiDE 最終核可內容執行。Gemini 雙子座的商品資訊與素材也會在上線前確認。" },
+  { image: "assets/instagram/03-after.svg", label: "貼文方向三｜活動後", caption: "三天兩夜結束，實用的準備會延續到新生的每一天。感謝 SOLiDE 評估支持新生的行動電力日常；所有合作露出均以最終確認為準。" }
+];
+let current = 0;
+function showPost(value, absolute = false) {
+  current = absolute ? value : (current + value + posts.length) % posts.length;
+  const post = posts[current];
+  const image = document.querySelector('#instagram-image');
+  const caption = document.querySelector('#instagram-caption');
+  const date = document.querySelector('#instagram-date');
+  if (image) image.src = post.image;
+  if (caption) caption.textContent = post.caption;
+  if (date) date.textContent = post.label;
+  document.querySelectorAll('.ig-dots button').forEach((dot, index) => dot.classList.toggle('is-current', index === current));
+}
+window.solideShowPost = showPost;
+document.querySelector('.nav-toggle')?.addEventListener('click', (event) => {
+  const button = event.currentTarget;
+  const open = button.getAttribute('aria-expanded') === 'true';
+  button.setAttribute('aria-expanded', String(!open));
+  document.querySelector('.proposal-links')?.classList.toggle('is-open', !open);
+});
