@@ -8,9 +8,9 @@ const observer = new IntersectionObserver((entries) => { const current = entries
 pages.forEach((page) => observer.observe(page));
 
 const posts = [
-  { image: 'assets/instagram/01-before-asus.png', alt: '華碩 ASUS RT-BE58 Go 活動前合作貼文', caption: '新生集合前，先把連線需求想清楚。RT-BE58 Go 的抽獎合作示意，聚焦多裝置同時連網的宿舍日常。', label: '貼文方向一｜活動前' },
-  { image: 'assets/instagram/02-during-asus.png', alt: '華碩 ASUS RT-BE58 Go 活動中合作貼文', caption: '闖關告一段落，現場的 RT-BE58 Go 體驗展示也吸引不少同學停下來看看。商品資訊與露出方式都會依華碩最終確認執行。', label: '貼文方向二｜活動中' },
-  { image: 'assets/instagram/03-after-asus.png', alt: '華碩 ASUS RT-BE58 Go 活動後合作貼文', caption: '三天兩夜結束，晚會抽獎的好心情還在延續。謝謝華碩評估支持新生的連線日常，讓實用的數位工具成為新生活的一份驚喜。', label: '貼文方向三｜活動後' },
+  { image: 'assets/instagram/01-before-asus.png', alt: '華碩 ASUS RT-BE58 Go 活動前合作貼文', caption: '宿舍多裝置同時連線，更順暢。RT-BE58 Go 的抽獎合作示意，聚焦新生的連線日常。', label: '貼文方向一｜活動前' },
+  { image: 'assets/instagram/02-during-asus.png', alt: '華碩 ASUS RT-BE58 Go 活動中合作貼文', caption: '穩定連線，探索更多大學新生活。現場的 RT-BE58 Go 體驗展示與商品資訊，皆會依華碩最終確認執行。', label: '貼文方向二｜活動中' },
+  { image: 'assets/instagram/03-after-asus.png', alt: '華碩 ASUS RT-BE58 Go 活動後合作貼文', caption: '三天兩夜，連上彼此，共同回憶。謝謝華碩評估支持新生的連線日常，讓實用的數位工具成為新生活的一份驚喜。', label: '貼文方向三｜活動後' },
 ];
 let currentPost = 0;
 const postImage = document.querySelector('#instagram-image');
