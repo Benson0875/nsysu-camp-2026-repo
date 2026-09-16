@@ -8,9 +8,9 @@ const observer = new IntersectionObserver((entries) => { const current = entries
 pages.forEach((page) => observer.observe(page));
 
 const posts = [
-  { image: 'assets/instagram/01-before.svg', alt: "蔡氏釀酒 Tsai's Actual Brewing 合作貼文範例一", caption: '活動前，把山林、農產與創意風味的故事先放進期待裡。若合作成案，蔡氏釀酒的周邊素材將依核可方式露出。', label: '貼文方向一｜活動前' },
-  { image: 'assets/instagram/02-during.svg', alt: "蔡氏釀酒 Tsai's Actual Brewing 合作貼文範例二", caption: '一場好的晚會不需要勸酒，也能有很多話題。現場將以年齡確認、非酒精飲品與安全原則照顧每一位參與者。', label: '貼文方向二｜活動中' },
-  { image: 'assets/instagram/03-after.svg', alt: "蔡氏釀酒 Tsai's Actual Brewing 合作貼文範例三", caption: '三天兩夜結束，新的校園故事才剛開始。謝謝蔡氏釀酒評估與我們一起留下有趣、也有分寸的合作記憶。', label: '貼文方向三｜活動後' },
+  { image: 'assets/instagram/01-before.png', alt: "蔡氏釀酒 Tsai's Actual Brewing 活動前實體合作物置入照片", caption: '活動前，把山林、農產與創意風味的故事先放進期待裡。若合作成案，蔡氏釀酒的周邊素材將依核可方式露出。', label: '貼文方向一｜活動前' },
+  { image: 'assets/instagram/02-during.png', alt: "蔡氏釀酒 Tsai's Actual Brewing 活動中實體合作物置入照片", caption: '一場好的晚會不需要勸酒，也能有很多話題。現場將以年齡確認、非酒精飲品與安全原則照顧每一位參與者。', label: '貼文方向二｜活動中' },
+  { image: 'assets/instagram/03-after.png', alt: "蔡氏釀酒 Tsai's Actual Brewing 活動後實體合作物置入照片", caption: '三天兩夜結束，新的校園故事才剛開始。謝謝蔡氏釀酒評估與我們一起留下有趣、也有分寸的合作記憶。', label: '貼文方向三｜活動後' },
 ];
 let currentPost = 0;
 const postImage = document.querySelector('#instagram-image');

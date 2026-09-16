@@ -4,3 +4,8 @@
 
 /* brand-site-quality-guard: readable copy at every viewport */
 .proposal-title,.collab-title,.ask-card-title strong,.request-number{word-break:keep-all;overflow-wrap:normal;max-inline-size:100%}.ask-card-title strong,.request-number{line-height:1.24}.ask-product-detail,.blank-product b,.instagram-caption p{line-height:1.65;word-break:keep-all}.deliverable-table td,.deliverable-table th{overflow-wrap:anywhere}.resource-link,.button{white-space:normal}.instagram-caption{min-width:0}
+.resource-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}.resource-links .resource-link{display:flex;align-items:center;justify-content:center;min-height:48px;margin:0;padding:10px 16px;border:1px solid var(--rose);border-radius:999px;background:#fff;color:var(--rose);font-size:1rem;font-weight:900;line-height:1.35;text-align:center;text-decoration:none;transition:background .2s,color .2s}.resource-links .resource-link:hover{background:var(--rose);color:#fff}@media(max-width:560px){.resource-links{grid-template-columns:1fr}}
+
+body{overflow-x:hidden}
+
+.reveal{opacity:1!important;transform:none!important}

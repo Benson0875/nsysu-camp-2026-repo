@@ -8,9 +8,9 @@ const observer = new IntersectionObserver((entries) => { const current = entries
 pages.forEach((page) => observer.observe(page));
 
 const posts = [
-  { image: 'assets/instagram/01-before.svg', alt: '沃隼釀造 WE DRINK WATER 合作貼文範例一', caption: '晚會前，我們先把每個人的選擇與安全準備好。合作素材與呈現方式均於上線前送沃隼釀造確認。', label: '貼文方向一｜活動前' },
-  { image: 'assets/instagram/02-during.svg', alt: '沃隼釀造 WE DRINK WATER 合作貼文範例二', caption: '音樂與朋友都在場，安全也不能缺席。成年參與者專屬安排將完成年齡確認，並提供非酒精飲品選項。', label: '貼文方向二｜活動中' },
-  { image: 'assets/instagram/03-after.svg', alt: '沃隼釀造 WE DRINK WATER 合作貼文範例三', caption: '謝謝沃隼釀造讓我們把品味與分寸一起放進這次合作想像裡。實際素材、文案與發布時程均於上線前確認。', label: '貼文方向三｜活動後' },
+  { image: 'assets/instagram/01-before.png', alt: '沃隼釀造 WE Drink Beer Company 活動前實體合作物置入照片', caption: '晚會前，我們先把每個人的選擇與安全準備好。合作素材與呈現方式均於上線前送沃隼釀造確認。', label: '貼文方向一｜活動前' },
+  { image: 'assets/instagram/02-during.png', alt: '沃隼釀造 WE Drink Beer Company 活動中實體合作物置入照片', caption: '音樂與朋友都在場，安全也不能缺席。成年參與者專屬安排將完成年齡確認，並提供非酒精飲品選項。', label: '貼文方向二｜活動中' },
+  { image: 'assets/instagram/03-after.png', alt: '沃隼釀造 WE Drink Beer Company 活動後實體合作物置入照片', caption: '謝謝沃隼釀造讓我們把品味與分寸一起放進這次合作想像裡。實際素材、文案與發布時程均於上線前確認。', label: '貼文方向三｜活動後' },
 ];
 let currentPost = 0;
 const postImage = document.querySelector('#instagram-image');
