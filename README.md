@@ -44,6 +44,8 @@
 ## 贊助企劃書
 
 - 愛康 ICON｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/icon/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/icon/activity-mockup.html)｜[官方網站](https://www.icon99.com.tw/)
+- 靠得住 Kotex｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/kotex/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/kotex/activity-mockup.html)｜[官方網站](https://www.kotex.com.tw/)
+- 好自在 Whisper｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/whisper/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/whisper/activity-mockup.html)｜[官方網站](https://www.livingartist.com.tw/)
 - 華碩 ASUS｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/asus/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/asus/activity-mockup.html)｜[官方網站](https://www.asus.com/tw/)
 - inaday's 捕蚊達人｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/inadays/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/inadays/activity-mockup.html)｜[官方 Instagram](https://www.instagram.com/inadays_tw/)
 - Footland｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/footland/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/footland/activity-mockup.html)｜[官方 Instagram](https://www.instagram.com/footland_tw/)
