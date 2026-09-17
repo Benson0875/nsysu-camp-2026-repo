@@ -19,9 +19,9 @@ const observer = new IntersectionObserver((entries) => {
 pages.forEach((page) => observer.observe(page));
 
 const posts = [
-  { image: 'assets/instagram/01-before.svg', alt: "inaday's 捕蚊達人合作貼文範例一", caption: "出發前，先把一份便利防護放進行李清單。若合作成案，inaday's 閃充電蚊拍將以品牌核可的方式，陪新生準備戶外活動。", label: '貼文方向一｜活動前' },
-  { image: 'assets/instagram/02-during.svg', alt: "inaday's 捕蚊達人合作貼文範例二", caption: "活動進行中，我們在合適環節記錄抽獎互動。商品呈現、使用說明與品牌素材，皆以 inaday's 捕蚊達人最終確認內容為準。", label: '貼文方向二｜活動中' },
-  { image: 'assets/instagram/03-after.svg', alt: "inaday's 捕蚊達人合作貼文範例三", caption: "活動結束後，留下的不只是照片，也是一份帶回校園日常的實用準備。謝謝 inaday's 捕蚊達人參與這段新生旅程。", label: '貼文方向三｜活動後' },
+  { image: '../assets/images/partner-group-01.png', alt: "迎新團體合照與中性迎新道具", caption: "出發前，先把一份便利防護放進行李清單。若合作成案，inaday's 閃充電蚊拍將以品牌核可的方式，陪新生準備戶外活動。", label: '貼文方向一｜活動前' },
+  { image: '../assets/images/partner-group-02.png', alt: "迎新活動互動合照與中性迎新道具", caption: "活動進行中，我們在合適環節記錄抽獎互動。商品呈現、使用說明與品牌素材，皆以 inaday's 捕蚊達人最終確認內容為準。", label: '貼文方向二｜活動中' },
+  { image: '../assets/images/partner-group-03.png', alt: "迎新團體合照與中性迎新道具", caption: "活動結束後，留下的不只是照片，也是一份帶回校園日常的實用準備。謝謝 inaday's 捕蚊達人參與這段新生旅程。", label: '貼文方向三｜活動後' },
 ];
 let currentPost = 0;
 const postImage = document.querySelector('#instagram-image');
