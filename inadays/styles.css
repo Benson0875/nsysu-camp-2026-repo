@@ -13,3 +13,13 @@
 .inadays-proposal .blank-product b { line-height: 1.75; word-break: keep-all; }
 .inadays-proposal .request-number strong { display: block; line-height: 1.42; letter-spacing: .04em; word-break: keep-all; }
 .inadays-proposal .request-number strong span { display: inline-block; margin-top: .18em; font-size: clamp(3rem, 6vw, 5.2rem); line-height: 1; }
+
+/* These statements are intentionally set as two compact lines on small screens. */
+.inadays-proposal .hydration-copy h2,
+.inadays-proposal .closing-card h2 { max-width: 100%; }
+.inadays-proposal .hydration-copy h2 span,
+.inadays-proposal .closing-card h2 span { display: block; white-space: nowrap; }
+@media (max-width: 560px) {
+  .inadays-proposal .hydration-copy h2 { font-size: clamp(1.78rem, 8.1vw, 2.2rem); letter-spacing: -.055em; line-height: 1.18; }
+  .inadays-proposal .closing-card h2 { font-size: clamp(1.68rem, 7.3vw, 2.15rem); letter-spacing: -.06em; line-height: 1.18; }
+}
