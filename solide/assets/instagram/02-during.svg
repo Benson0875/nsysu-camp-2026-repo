@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080"><rect width="1080" height="1080" fill="#202126"/><path d="M0 720L1080 280V1080H0Z" fill="#ef6d62"/><rect x="78" y="86" width="290" height="62" rx="31" fill="#fff"/><text x="110" y="127" fill="#202126" font-family="Arial,sans-serif" font-size="27" font-weight="800">2026_NSYSU_CAMP</text><text x="78" y="350" fill="#fff" font-family="Noto Sans TC,Arial,sans-serif" font-size="78" font-weight="900">晚會現場</text><text x="78" y="445" fill="#fff" font-family="Noto Sans TC,Arial,sans-serif" font-size="78" font-weight="900">一起揭曉驚喜</text><text x="78" y="720" fill="#202126" font-family="Noto Sans TC,Arial,sans-serif" font-size="48" font-weight="900">SOLiDE GEMINI</text><text x="78" y="790" fill="#202126" font-family="Noto Sans TC,Arial,sans-serif" font-size="38" font-weight="800">行動電力，陪伴新的日常</text><text x="78" y="972" fill="#fff" font-family="Arial,sans-serif" font-size="30" font-weight="700" letter-spacing="3">PARTNERSHIP POST 2 / 03</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <image href="../../assets/images/partner-group-02.png" width="1080" height="1080" preserveAspectRatio="xMidYMid slice" />
+  <rect width="1080" height="1080" fill="#111318" opacity=".16" />
+  <rect y="690" width="1080" height="390" fill="#202126" opacity=".79" />
+  <rect x="72" y="64" width="292" height="64" rx="32" fill="#fff" opacity=".95" />
+  <text x="104" y="106" fill="#202126" font-family="Arial, sans-serif" font-size="26" font-weight="800">2026_NSYSU_CAMP</text>
+  <text x="76" y="770" fill="#fff" font-family="Noto Sans TC, Arial, sans-serif" font-size="70" font-weight="900">晚會現場</text>
+  <text x="76" y="846" fill="#fff" font-family="Noto Sans TC, Arial, sans-serif" font-size="44" font-weight="800">一起揭曉驚喜</text>
+  <text x="76" y="905" fill="#f26d62" font-family="Arial, sans-serif" font-size="38" font-weight="900" letter-spacing="2">SOLiDE GEMINI</text>
+  <text x="76" y="954" fill="#fff" font-family="Noto Sans TC, Arial, sans-serif" font-size="30" font-weight="700">行動電力，陪伴新的日常</text>
+  <text x="76" y="1020" fill="#fff" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3">PARTNERSHIP POST 2 / 03</text>
+</svg>
