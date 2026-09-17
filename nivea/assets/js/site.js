@@ -1,0 +1,11 @@
+const header = document.querySelector('.site-header');
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+const carousel = document.querySelector('.sponsor-carousel');
+
+window.addEventListener('scroll', () => header?.classList.toggle('is-scrolled', window.scrollY > 12), { passive: true });
+navToggle?.addEventListener('click', () => { const open = navLinks?.classList.toggle('is-open'); navToggle.setAttribute('aria-expanded', String(Boolean(open))); });
+const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } }), { threshold: .12 });
+document.querySelectorAll('.reveal').forEach((item) => observer.observe(item));
+document.querySelector('.carousel-prev')?.addEventListener('click', () => carousel?.scrollBy({ left: -300, behavior: 'smooth' }));
+document.querySelector('.carousel-next')?.addEventListener('click', () => carousel?.scrollBy({ left: 300, behavior: 'smooth' }));
