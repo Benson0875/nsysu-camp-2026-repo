@@ -5,7 +5,7 @@
 .alcohol-warning{position:sticky;bottom:0;z-index:20;padding:16px 24px;background:#171717;color:#fff;text-align:center;font-weight:900;letter-spacing:.08em;font-size:clamp(.78rem,1.5vw,1rem)}
 .alcohol-warning{position:sticky;bottom:0;z-index:20;padding:16px 24px;background:#171717;color:#fff;text-align:center;font-weight:900;letter-spacing:.08em;font-size:clamp(.78rem,1.5vw,1rem)}
 
-/* Keep the Whisper request concise and inside its card. */
+/* Keep the Kotex request concise and inside its card. */
 .whisper-proposal .ask-card { max-width: 43rem; }
 .whisper-proposal .ask-card-title { gap: .55rem; }
 .whisper-proposal .ask-card-title strong { font-size: clamp(2rem, 3.6vw, 3rem); line-height: 1.2; letter-spacing: .025em; overflow-wrap: normal; word-break: keep-all; }
@@ -13,3 +13,5 @@
 .whisper-proposal .blank-product b { line-height: 1.75; word-break: keep-all; }
 .whisper-proposal .request-number strong { display: block; line-height: 1.42; letter-spacing: .04em; word-break: keep-all; }
 .whisper-proposal .request-number strong span { display: inline-block; margin-top: .18em; font-size: clamp(3rem, 6vw, 5.2rem); line-height: 1; }
+
+.whisper-proposal .hydration-copy h2, .whisper-proposal .hydration-copy h2, .whisper-proposal .closing-card h2, .whisper-proposal .closing-card h2 { font-size:clamp(2.35rem,5vw,4.9rem); line-height:1.08; text-wrap:balance; }\n.whisper-proposal .hydration-copy h2 span, .whisper-proposal .hydration-copy h2 span, .whisper-proposal .closing-card h2 span, .whisper-proposal .closing-card h2 span { display:block; }\n
