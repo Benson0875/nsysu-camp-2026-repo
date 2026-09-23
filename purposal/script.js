@@ -26,7 +26,7 @@ const pageObserver = new IntersectionObserver((entries) => {
 pages.forEach((page) => pageObserver.observe(page));
 
 const posts = [
-  { image: 'assets/instagram/01-before.png', alt: '舒跑合作貼文範例一', caption: '新生營前的準備，除了行李，也別忘了補水。舒跑陪大家一起出發，迎接第一段大學共同回憶。', label: '範例貼文一' },
+  { image: 'assets/instagram/01-before-textless.png', alt: '舒跑合作貼文範例一，無文字版本', caption: '新生營前的準備，除了行李，也別忘了補水。舒跑陪大家一起出發，迎接第一段大學共同回憶。', label: '範例貼文一' },
   { image: 'assets/instagram/02-during.png', alt: '舒跑合作貼文範例二', caption: '在高活動量的行程裡，補水是每個人都需要的環節。這一刻，舒跑陪著大家繼續向前。', label: '範例貼文二' },
   { image: 'assets/instagram/03-after.png', alt: '舒跑合作貼文範例三', caption: '三天兩夜的故事留下來了。謝謝每一位夥伴，也謝謝舒跑參與這段共同回憶。', label: '範例貼文三' },
 ];
