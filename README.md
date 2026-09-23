@@ -44,6 +44,12 @@
 ## 贊助企劃書
 
 - 愛康 ICON｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/icon/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/icon/activity-mockup.html)｜[官方網站](https://www.icon99.com.tw/)
+- 上山採藥 tsaio｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/tsaio/)｜[模擬活動首頁](https://benson0875.github.io/nsysu-camp-2026-repo/tsaio/activity-mockup.html)｜[官方網站](https://www.sofnongroup.com.tw)
+- TKLAB｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/tklab/)｜[模擬活動首頁](https://benson0875.github.io/nsysu-camp-2026-repo/tklab/activity-mockup.html)｜[官方網站](https://www.tklab.com.tw)
+- 淨世代｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/clc/)｜[模擬活動首頁](https://benson0875.github.io/nsysu-camp-2026-repo/clc/activity-mockup.html)｜[官方網站](https://www.clc.com.tw/sustainabledevelopment)
+- 仁舟淨塑 ZenZhou｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/zenzhou/)｜[模擬活動首頁](https://benson0875.github.io/nsysu-camp-2026-repo/zenzhou/activity-mockup.html)｜[官方網站](https://www.zenzhoultd.com)
+- ReTissue 植林紙｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/retissue/)｜[模擬活動首頁](https://benson0875.github.io/nsysu-camp-2026-repo/retissue/activity-mockup.html)｜[官方網站](https://www.retissue.tw)
+- 健身工廠 Fitness Factory｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/fitness-factory/)｜[模擬活動首頁](https://benson0875.github.io/nsysu-camp-2026-repo/fitness-factory/activity-mockup.html)｜[官方網站](https://www.fitnessfactory.com.tw/tw)
 - 華碩 ASUS｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/asus/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/asus/activity-mockup.html)｜[官方網站](https://www.asus.com/tw/)
 - inaday's 捕蚊達人｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/inadays/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/inadays/activity-mockup.html)｜[官方 Instagram](https://www.instagram.com/inadays_tw/)
 - Footland｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/footland/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/footland/activity-mockup.html)｜[官方 Instagram](https://www.instagram.com/footland_tw/)
