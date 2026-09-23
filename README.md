@@ -41,6 +41,12 @@
 - [蔡氏釀酒 Tsai's Actual Brewing 官方 Instagram](https://www.instagram.com/tsais.actual.brewing/)
 ## 贊助企劃書
 
+- 上山採藥 tsaio｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/tsaio/)｜[模擬活動首頁](https://benson0875.github.io/nsysu-camp-2026-repo/tsaio/activity-mockup.html)｜[官方網站](https://www.sofnongroup.com.tw)
+- TKLAB｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/tklab/)｜[模擬活動首頁](https://benson0875.github.io/nsysu-camp-2026-repo/tklab/activity-mockup.html)｜[官方網站](https://www.tklab.com.tw)
+- 淨世代｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/clc/)｜[模擬活動首頁](https://benson0875.github.io/nsysu-camp-2026-repo/clc/activity-mockup.html)｜[官方網站](https://www.clc.com.tw/sustainabledevelopment)
+- 仁舟淨塑 ZenZhou｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/zenzhou/)｜[模擬活動首頁](https://benson0875.github.io/nsysu-camp-2026-repo/zenzhou/activity-mockup.html)｜[官方網站](https://www.zenzhoultd.com)
+- ReTissue 植林紙｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/retissue/)｜[模擬活動首頁](https://benson0875.github.io/nsysu-camp-2026-repo/retissue/activity-mockup.html)｜[官方網站](https://www.retissue.tw)
+- 健身工廠 Fitness Factory｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/fitness-factory/)｜[模擬活動首頁](https://benson0875.github.io/nsysu-camp-2026-repo/fitness-factory/activity-mockup.html)｜[官方網站](https://www.fitnessfactory.com.tw/tw)
 - 愛康 ICON｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/icon/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/icon/activity-mockup.html)｜[官方網站](https://www.icon99.com.tw/)
 - 靠得住 Kotex｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/kotex/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/kotex/activity-mockup.html)｜[官方網站](https://www.kotex.com.tw/)
 - 好自在 Whisper｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/whisper/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/whisper/activity-mockup.html)｜[官方網站](https://www.livingartist.com.tw/)
