@@ -93,3 +93,6 @@ main { flex:1; }
 .ask-card-title span { display:block;margin-bottom:5px; }
 .ask-card-title strong { display:block;white-space:nowrap;font-size:clamp(1.55rem,3vw,2.35rem);line-height:1.15; }
 @media (max-width:700px) { .ask-card-title strong { white-space:normal; } }
+
+/* Keep long product names within the invitation card at every viewport width. */
+.ask-card-title strong { white-space:normal; overflow-wrap:anywhere; font-size:clamp(1.3rem,2.4vw,2rem); }
