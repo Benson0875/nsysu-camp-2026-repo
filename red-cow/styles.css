@@ -12,6 +12,5 @@
 .apexx-proposal .closing-card h2 { font-size:clamp(2rem,3vw,3rem); line-height:1.18; letter-spacing:-.07em; }
 .apexx-proposal .closing-card h2 span:last-child { font-size:clamp(1.7rem,2.2vw,2.35rem); white-space:nowrap; }
 @media (max-width:560px) { .apexx-proposal .closing-card h2 { font-size:1.75rem; } }
-@media (max-width:560px) { .apexx-proposal .closing-card h2 span:last-child { white-space:normal; } }
 
 /* Keep each supplied logo legible in the shared APEXX proposal layout. */
