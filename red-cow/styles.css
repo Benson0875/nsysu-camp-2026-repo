@@ -6,4 +6,8 @@
 
 @media (max-width:560px) { .apexx-proposal .hydration-copy h2 span { white-space:normal; } }
 
+/* The collaboration headline has two deliberate semantic lines at every size. */
+.apexx-proposal .hydration-copy .collab-title { max-width:650px; font-size:clamp(2.1rem,3.7vw,3.45rem); line-height:1.17; letter-spacing:-.07em; text-wrap:balance; }
+.apexx-proposal .request-number { display:block; font-size:clamp(1.7rem,3.2vw,3.25rem); font-weight:900; line-height:1.24; letter-spacing:-.055em; }
+
 /* Keep each supplied logo legible in the shared APEXX proposal layout. */
