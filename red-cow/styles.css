@@ -4,4 +4,6 @@
 .apexx-proposal .proposal-brand img { padding:0; background:transparent; object-fit:cover; }.apexx-proposal .ig-arrow { z-index:2; touch-action:manipulation; }
 @media (max-width:860px) { .visual-grid { grid-template-columns:1fr; }.site-preview img { min-height:0; }.ig-card { min-height:360px; }.motor-proposal .decision-layout { width:calc(100% - 32px); } }
 
+@media (max-width:560px) { .apexx-proposal .hydration-copy h2 span { white-space:normal; } }
+
 /* Keep each supplied logo legible in the shared APEXX proposal layout. */

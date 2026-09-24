@@ -61,7 +61,7 @@
 - plain-me｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/plain-me/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/plain-me/activity-mockup.html)｜[官方 Instagram](https://www.instagram.com/plainme_life/)
 - cama café｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/cama-cafe/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/cama-cafe/activity-mockup.html)｜[官方 Instagram](https://www.instagram.com/camacafe_tw/)
 - JKS Shop｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/jks-shop/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/jks-shop/activity-mockup.html)｜[官方 Instagram](https://www.instagram.com/jksshop_tw/)
-- 紅牛聰明營養｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/red-cow/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/red-cow/activity-mockup.html)｜[官方 Instagram](https://www.instagram.com/redcow.tw/)
+- 灣仔客製化 One Gift｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/red-cow/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/red-cow/activity-mockup.html)｜[官方網站](https://one.66shop.tw/)
 - Bone 蹦克｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/bone/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/bone/activity-mockup.html)｜[官方 Instagram](https://www.instagram.com/bone_taiwan/)
 - DoGa 香酥脆椒｜[企劃書](https://benson0875.github.io/nsysu-camp-2026-repo/doga-chili/)｜[模擬活動網頁](https://benson0875.github.io/nsysu-camp-2026-repo/doga-chili/activity-mockup.html)｜[官方 Instagram](https://www.instagram.com/dogachili/)
 
