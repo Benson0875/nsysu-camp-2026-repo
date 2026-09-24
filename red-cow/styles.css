@@ -10,7 +10,7 @@
 .apexx-proposal .hydration-copy .collab-title { max-width:650px; font-size:clamp(2.1rem,3.7vw,3.45rem); line-height:1.17; letter-spacing:-.07em; text-wrap:balance; }
 .apexx-proposal .request-number { display:block; font-size:clamp(1.7rem,3.2vw,3.25rem); font-weight:900; line-height:1.24; letter-spacing:-.055em; }
 .apexx-proposal .closing-card h2 { font-size:clamp(2rem,3vw,3rem); line-height:1.18; letter-spacing:-.07em; }
-.apexx-proposal .closing-card h2 span:last-child { font-size:.82em; white-space:nowrap; }
+.apexx-proposal .closing-card h2 span:last-child { font-size:clamp(1.7rem,2.2vw,2.35rem); white-space:nowrap; }
 @media (max-width:560px) { .apexx-proposal .closing-card h2 { font-size:1.75rem; } }
 @media (max-width:560px) { .apexx-proposal .closing-card h2 span:last-child { white-space:normal; } }
 
