@@ -18,6 +18,8 @@
 
 ### 公開連結
 
+- [行前通知（集合、行李清單、行程與小組名單）](https://benson0875.github.io/nsysu-camp-2026-repo/predeparture/)
+
 - [活動網站（首頁）](https://benson0875.github.io/nsysu-camp-2026-repo/)
 - [活動介紹](https://benson0875.github.io/nsysu-camp-2026-repo/activities.html)
 - [贊助合作資訊](https://benson0875.github.io/nsysu-camp-2026-repo/sponsors.html)
