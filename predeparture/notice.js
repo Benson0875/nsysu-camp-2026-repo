@@ -23,19 +23,4 @@
       status.textContent += '（此瀏覽器無法儲存進度）';
     }
   }));
-  const input = document.querySelector('#name-search');
-  const groups = [...document.querySelectorAll('.group')];
-  document.querySelector('.group-search').hidden = false;
-  input.addEventListener('input', () => {
-    const query = input.value.trim().replace(/\s+/g, '');
-    let count = 0;
-    groups.forEach(group => {
-      const match = group.dataset.search.replace(/\s+/g, '').includes(query);
-      group.hidden = !match;
-      if (match) count++;
-    });
-    document.querySelector('#search-status').textContent = query
-      ? `找到 ${count} 個小組` : '顯示全部 10 個小組';
-    document.querySelector('#no-results').hidden = count !== 0;
-  });
 })();
