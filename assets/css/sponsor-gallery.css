@@ -1,0 +1,82 @@
+/* Official sponsor gallery: shared card sizes, original artwork and accessible names. */
+.sponsor-track > .sponsor-ribbon-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 360px;
+  width: 360px;
+  min-width: 360px;
+  height: 212px;
+  min-height: 0;
+  aspect-ratio: auto;
+}
+.sponsor-art { background: #fff; overflow: hidden; }
+.sponsor-track > .sponsor-art { padding: 18px; }
+.sponsor-track > .sponsor-art img {
+  width: 100%; height: 100%; max-width: 100%;
+  object-fit: contain; border-radius: 0;
+}
+/* Match the actual logo pixels, rather than approximating the green by eye. */
+.sponsor-track > .sponsor-ribbon-card--kemeng-logo,
+.sponsor-carousel > .sponsor-logo-card--kemeng {
+  background: #ccde4e;
+  border-color: #ccde4e;
+}
+.sponsor-carousel { grid-auto-columns: min(260px, 76vw); align-items: start; }
+.sponsor-carousel > .sponsor-logo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1;
+  height: auto;
+  min-height: 0;
+  gap: 0;
+  padding: 24px;
+  text-decoration: none;
+}
+.sponsor-carousel > .sponsor-logo-card > img {
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  max-width: 100%;
+  max-height: none;
+  flex: 0 1 auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
+}
+/* Hide only the corners outside the supplied circular artwork. */
+.sponsor-track > .sponsor-art--yi-gou-liang-gou img,
+.sponsor-carousel > .sponsor-art--yi-gou-liang-gou img {
+  width: auto;
+  max-width: 100%;
+  aspect-ratio: 1;
+  clip-path: circle(49.5% at 50% 50%);
+}
+.sponsor-art--yi-gou-liang-gou { background: #edeadb; }
+.sponsor-art--zenzhou { background: #1daace; }
+.sponsor-art--nsysu-optical { background: #feb914; }
+.sponsor-art--little-warmble { background: #e3e3e3; }
+.sponsor-art--inadays { background: #fff6f7; }
+/* A tall logo stays fully visible inside the same outer frame as every partner. */
+.sponsor-track > .sponsor-art--moment-want img,
+.sponsor-carousel > .sponsor-art--moment-want img { width: auto; max-width: 100%; }
+.sponsor-carousel > a.sponsor-logo-card:hover { transform: translateY(-4px); }
+.sponsor-carousel > a.sponsor-logo-card:focus-visible,
+.sponsor-track > a.sponsor-ribbon-card:focus-visible {
+  outline: 3px solid var(--accent); outline-offset: 4px;
+}
+@media (max-width: 800px) {
+  .sponsor-track > .sponsor-ribbon-card {
+    flex-basis: min(78vw, 290px);
+    width: min(78vw, 290px);
+    min-width: min(78vw, 290px);
+    height: auto;
+    aspect-ratio: 360 / 212;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sponsor-carousel > a.sponsor-logo-card:hover { transform: none; }
+}
