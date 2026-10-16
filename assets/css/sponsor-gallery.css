@@ -80,3 +80,12 @@
 @media (prefers-reduced-motion: reduce) {
   .sponsor-carousel > a.sponsor-logo-card:hover { transform: none; }
 }
+
+/* Use the full Banana Music wordmark at a smaller size in the square gallery. */
+.sponsor-carousel > .sponsor-art--banana-music > img {
+  width: 78%;
+  height: auto !important;
+  max-height: 100%;
+  flex: 0 0 auto;
+  aspect-ratio: 732 / 188;
+}
